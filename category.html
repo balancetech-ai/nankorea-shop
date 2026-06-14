@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="한국난원 - 카테고리별 상품 목록. 동양란, 서양란, 화환, 꽃바구니, 공기정화식물, 분재.">
+    <meta property="og:title" content="한국난원 - 상품 목록">
+    <meta property="og:type" content="website">
     <title>한국난원 - 상품 목록</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/kurly.css">
@@ -30,8 +33,8 @@
                 <a href="index.html">KOREA NANWON<span>한국난원</span></a>
             </div>
             <div class="search-form">
-                <input type="text" placeholder="어떤 식물을 찾으시나요?">
-                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="searchInput" placeholder="어떤 식물을 찾으시나요?">
+                <button type="button" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="header-icons">
                 <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping"></i><span class="badge">0</span></a>
@@ -42,97 +45,36 @@
 
     <nav class="main-nav">
         <div class="inner">
-            <ul class="menu-list">
+            <ul class="menu-list" id="mainNav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="category.html" class="active">동양란관</a></li>
-                <li><a href="category.html">서양란관</a></li>
-                <li><a href="category.html" class="point-yellow">근조화환</a></li>
-                <li><a href="category.html" class="point-yellow">축하화환</a></li>
-                <li><a href="category.html">꽃바구니</a></li>
-                <li><a href="category.html">공기정화식물</a></li>
-                <li><a href="category.html">분재/숯부작</a></li>
+                <li><a href="category.html?cat=동양란관">동양란관</a></li>
+                <li><a href="category.html?cat=서양란관">서양란관</a></li>
+                <li><a href="category.html?cat=근조화환" class="point-yellow">근조화환</a></li>
+                <li><a href="category.html?cat=축하화환" class="point-yellow">축하화환</a></li>
+                <li><a href="category.html?cat=꽃바구니">꽃바구니</a></li>
+                <li><a href="category.html?cat=공기정화식물">공기정화식물</a></li>
+                <li><a href="category.html?cat=분재/숯부작">분재/숯부작</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="inner sub-page-container" style="padding: 50px 0;">
-        
+    <div class="inner sub-page-container" style="padding-top: 50px; padding-bottom: 80px;">
+
         <div class="category-title-area" style="text-align: center; margin-bottom: 30px;">
-            <h2 style="font-size: 28px; font-weight: 700; color: #333; letter-spacing: -0.5px;">동양란관</h2>
+            <h2 id="catTitle" style="font-size: 28px; font-weight: 700; color: #333; letter-spacing: -0.5px;"></h2>
         </div>
 
-        <div class="filter-bar" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f4f4f4; padding-bottom: 15px; margin-bottom: 25px; font-size: 13px; color: #999;">
-            <div class="total-count" style="color: #333;">총 <span style="font-weight: 700; color: #5f0080;">24</span>개 상품</div>
+        <div class="filter-bar" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f4f4f4; padding-bottom: 15px; margin-bottom: 25px; font-size: 13px; color: #999; flex-wrap: wrap; gap: 10px;">
+            <div class="total-count" style="color: #333;">총 <span id="productCount" style="font-weight: 700; color: #5f0080;">0</span>개 상품</div>
             <div class="filter-links" style="display: flex; gap: 15px;">
-                <a href="#" style="color: #5f0080; font-weight: 700;">추천순</a>
-                <a href="#">신상품순</a>
-                <a href="#">낮은 가격순</a>
-                <a href="#">높은 가격순</a>
+                <a href="#" id="sort-recommend" class="sort-link sort-active" onclick="setSort('recommend'); return false;">추천순</a>
+                <a href="#" id="sort-new"        class="sort-link"            onclick="setSort('new'); return false;">신상품순</a>
+                <a href="#" id="sort-priceAsc"   class="sort-link"            onclick="setSort('priceAsc'); return false;">낮은 가격순</a>
+                <a href="#" id="sort-priceDesc"  class="sort-link"            onclick="setSort('priceDesc'); return false;">높은 가격순</a>
             </div>
         </div>
 
-        <div class="product-grid">
-            
-            <div class="product-card">
-                <div class="img-box">
-                    <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
-                </div>
-                <div class="info-box">
-                    <p class="p-category">명품 동양란</p>
-                    <h4 class="p-name">철골소심 (고급 도자기분)</h4>
-                    <div class="p-price-row">
-                        <span class="price">70,000원</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-box">
-                    <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
-                </div>
-                <div class="info-box">
-                    <p class="p-category">명품 동양란</p>
-                    <h4 class="p-name">대훈설 (작품 도자기분)</h4>
-                    <div class="p-price-row">
-                        <span class="price">120,000원</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-box">
-                    <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
-                </div>
-                <div class="info-box">
-                    <p class="p-category">명품 동양란</p>
-                    <h4 class="p-name">관음 (행운을 부르는 난)</h4>
-                    <div class="p-price-row">
-                        <span class="price">90,000원</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-box">
-                    <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
-                </div>
-                <div class="info-box">
-                    <p class="p-category">명품 동양란</p>
-                    <h4 class="p-name">옥화 (은은한 향기가 일품)</h4>
-                    <div class="p-price-row">
-                        <span class="price">80,000원</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="pagination" style="display: flex; justify-content: center; gap: 10px; margin-top: 50px; font-size: 14px;">
-            <a href="#" style="border: 1px solid #ddd; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; color: #ccc;"><i class="fa-solid fa-angle-left"></i></a>
-            <a href="#" style="border: 1px solid #5f0080; background-color: #5f0080; color: #fff; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</a>
-            <a href="#" style="border: 1px solid #ddd; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; color: #333;">2</a>
-            <a href="#" style="border: 1px solid #ddd; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; color: #333;"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
+        <div class="product-grid" id="productGrid"></div>
 
     </div>
 
@@ -150,10 +92,173 @@
                 <div class="cs-box">
                     <p class="cs-title">고객만족센터</p>
                     <p class="cs-number">02-3477-7171</p>
+                    <p class="cs-time">평일 09:00 - 18:00 / 주말·공휴일 휴무</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+    var PRODUCTS = {
+        '동양란관': [
+            { id: 1,  name: '철골소심 (고급 도자기분)',               price: 70000,  tag: 'BEST', icon: 'fa-seedling' },
+            { id: 2,  name: '대훈설 (작품 도자기분)',                  price: 120000, tag: null,   icon: 'fa-seedling' },
+            { id: 3,  name: '관음 (행운을 부르는 난)',                 price: 90000,  tag: null,   icon: 'fa-seedling' },
+            { id: 4,  name: '옥화 (은은한 향기가 일품)',               price: 80000,  tag: null,   icon: 'fa-seedling' },
+        ],
+        '서양란관': [
+            { id: 5,  name: '화사한 핑크 미니 서양란 (만천홍 화분)',   price: 120000, tag: 'NEW',  icon: 'fa-wand-magic-sparkles' },
+            { id: 6,  name: '심비디움 대형',                          price: 150000, tag: null,   icon: 'fa-wand-magic-sparkles' },
+            { id: 7,  name: '호접란 2대 (White)',                      price: 85000,  tag: null,   icon: 'fa-wand-magic-sparkles' },
+            { id: 8,  name: '덴파레 혼합 (고급 도기)',                 price: 95000,  tag: null,   icon: 'fa-wand-magic-sparkles' },
+        ],
+        '근조화환': [
+            { id: 9,  name: '[정품/기획] 근조 3단 화환 (당일배송)',    price: 90000,  tag: 'NEW',  icon: 'fa-holly-berry' },
+            { id: 10, name: '근조 2단 화환 (소형 특가)',               price: 65000,  tag: null,   icon: 'fa-holly-berry' },
+            { id: 11, name: '근조 2단 화환 (고급형)',                  price: 75000,  tag: null,   icon: 'fa-holly-berry' },
+        ],
+        '축하화환': [
+            { id: 12, name: '[경조사] 품격 축하 3단 화환',             price: 95000,  tag: null,   icon: 'fa-leaf' },
+            { id: 13, name: '축하 2단 화환 (일반형)',                  price: 70000,  tag: null,   icon: 'fa-leaf' },
+            { id: 14, name: '개업 축하 특선 화환 (리본 맞춤 제작)',     price: 110000, tag: null,   icon: 'fa-leaf' },
+        ],
+        '꽃바구니': [
+            { id: 15, name: '사랑 고백 장미 바구니 (레드 30송이)',      price: 55000,  tag: null,   icon: 'fa-gift' },
+            { id: 16, name: '혼합 꽃바구니 (생일·기념일)',              price: 45000,  tag: null,   icon: 'fa-gift' },
+            { id: 17, name: '고급 프리미엄 꽃바구니 (퍼플톤)',          price: 80000,  tag: null,   icon: 'fa-gift' },
+        ],
+        '공기정화식물': [
+            { id: 18, name: '스투키 (NASA 선정 1위 공기정화)',          price: 25000,  tag: null,   icon: 'fa-spa' },
+            { id: 19, name: '산세베리아 (음이온 방출)',                 price: 30000,  tag: null,   icon: 'fa-spa' },
+            { id: 20, name: '몬스테라 대형 (인테리어 명품)',             price: 65000,  tag: null,   icon: 'fa-spa' },
+        ],
+        '분재/숯부작': [
+            { id: 21, name: '소나무 분재 (30년생 고풍스러운 자태)',     price: 250000, tag: 'BEST', icon: 'fa-tree' },
+            { id: 22, name: '숯부작 (천연 오브제)',                     price: 45000,  tag: null,   icon: 'fa-tree' },
+            { id: 23, name: '복분자 분재 (귀한 자태)',                  price: 180000, tag: null,   icon: 'fa-tree' },
+        ],
+    };
+
+    // ── 장바구니 ──
+    function getCart() { return JSON.parse(localStorage.getItem('nankorea-cart') || '{}'); }
+    function saveCart(c) { localStorage.setItem('nankorea-cart', JSON.stringify(c)); }
+    function getCartCount() { return Object.values(getCart()).reduce(function(s, n) { return s + n; }, 0); }
+    function addToCart(id, name) {
+        var c = getCart(); c[id] = (c[id] || 0) + 1; saveCart(c);
+        updateBadge();
+        showToast('"' + name + '" 장바구니에 담았습니다.');
+    }
+    function updateBadge() {
+        var cnt = getCartCount();
+        document.querySelectorAll('.badge').forEach(function(b) { b.textContent = cnt; });
+    }
+    function showToast(msg) {
+        var t = document.createElement('div');
+        t.className = 'cart-toast'; t.textContent = msg;
+        document.body.appendChild(t);
+        setTimeout(function() { t.classList.add('show'); }, 10);
+        setTimeout(function() { t.classList.remove('show'); setTimeout(function() { t.remove(); }, 300); }, 2200);
+    }
+
+    // ── 검색 ──
+    function doSearch() {
+        var q = document.getElementById('searchInput').value.trim();
+        if (q) location.href = 'category.html?q=' + encodeURIComponent(q);
+    }
+    document.getElementById('searchBtn').addEventListener('click', doSearch);
+    document.getElementById('searchInput').addEventListener('keydown', function(e) { if (e.key === 'Enter') doSearch(); });
+
+    // ── 상품 렌더링 ──
+    var params = new URLSearchParams(location.search);
+    var currentCat = params.get('cat') || '동양란관';
+    var currentQ   = params.get('q')   || '';
+    var sortMode   = params.get('sort') || 'recommend';
+
+    function getAllProducts() {
+        var all = [];
+        Object.keys(PRODUCTS).forEach(function(cat) {
+            PRODUCTS[cat].forEach(function(p) { all.push(Object.assign({}, p, { catName: cat })); });
+        });
+        return all;
+    }
+
+    function getProducts() {
+        if (currentQ) {
+            var kw = currentQ.toLowerCase();
+            return getAllProducts().filter(function(p) {
+                return p.name.toLowerCase().indexOf(kw) !== -1 || p.catName.indexOf(kw) !== -1;
+            });
+        }
+        return (PRODUCTS[currentCat] || []).map(function(p) { return Object.assign({}, p, { catName: currentCat }); });
+    }
+
+    function applySort(arr) {
+        var a = arr.slice();
+        if (sortMode === 'priceAsc')  return a.sort(function(x, y) { return x.price - y.price; });
+        if (sortMode === 'priceDesc') return a.sort(function(x, y) { return y.price - x.price; });
+        if (sortMode === 'new')       return a.reverse();
+        return a;
+    }
+
+    function setSort(mode) {
+        sortMode = mode;
+        renderProducts();
+    }
+
+    function renderProducts() {
+        var products = applySort(getProducts());
+        var title = currentQ ? '"' + currentQ + '" 검색 결과' : currentCat;
+
+        document.getElementById('catTitle').textContent = title;
+        document.title = '한국난원 - ' + title;
+        document.getElementById('productCount').textContent = products.length;
+
+        // 네비 활성화
+        document.querySelectorAll('#mainNav a').forEach(function(a) {
+            a.classList.remove('active');
+            var href = a.getAttribute('href') || '';
+            if (!currentQ && href.indexOf('cat=' + encodeURIComponent(currentCat)) !== -1) {
+                a.classList.add('active');
+            }
+        });
+
+        // 정렬 활성화
+        document.querySelectorAll('.sort-link').forEach(function(a) { a.classList.remove('sort-active'); });
+        var activeEl = document.getElementById('sort-' + sortMode);
+        if (activeEl) activeEl.classList.add('sort-active');
+
+        if (products.length === 0) {
+            document.getElementById('productGrid').innerHTML =
+                '<div style="grid-column:1/-1;text-align:center;padding:60px 0;color:#999;font-size:15px;">검색 결과가 없습니다.</div>';
+            return;
+        }
+
+        document.getElementById('productGrid').innerHTML = products.map(function(p) {
+            var tagHtml = p.tag ? '<span class="tag tag-' + p.tag.toLowerCase() + '">' + p.tag + '</span>' : '';
+            var safeName = p.name.replace(/'/g, "\\'");
+            return '<div class="product-card" onclick="location.href=\'category.html?cat=' + encodeURIComponent(p.catName) + '\'">'
+                + '<div class="img-box">'
+                + '<div class="dummy-img"><i class="fa-solid ' + p.icon + '"></i></div>'
+                + tagHtml
+                + '</div>'
+                + '<div class="info-box">'
+                + '<p class="p-category">' + p.catName + '</p>'
+                + '<h4 class="p-name">' + p.name + '</h4>'
+                + '<div class="p-price-row">'
+                + '<span class="price">' + p.price.toLocaleString() + '원</span>'
+                + '<button class="btn-add-cart" onclick="event.stopPropagation(); addToCart(' + p.id + ', \'' + safeName + '\')">'
+                + '<i class="fa-solid fa-cart-plus"></i> 담기'
+                + '</button>'
+                + '</div>'
+                + '</div>'
+                + '</div>';
+        }).join('');
+
+        updateBadge();
+    }
+
+    renderProducts();
+    </script>
 
 </body>
 </html>

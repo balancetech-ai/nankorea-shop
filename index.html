@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="한국난원 - 명품 동양란, 서양란, 화환, 꽃바구니 전국 배송. 전국 3시간 이내 정성을 다해 안전하게 배송합니다.">
+    <meta property="og:title" content="한국난원 - Premium Flower Market">
+    <meta property="og:description" content="명품 동양란, 서양란, 화환, 꽃바구니 전국 배송">
+    <meta property="og:type" content="website">
     <title>한국난원 - Premium Flower Market</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/kurly.css">
@@ -27,12 +31,12 @@
     <header class="main-header">
         <div class="inner flex-between">
             <div class="logo">
-                <a href="#">KOREA NANWON<span>한국난원</span></a>
+                <a href="index.html">KOREA NANWON<span>한국난원</span></a>
             </div>
-            
+
             <div class="search-form">
-                <input type="text" placeholder="어떤 식물을 찾으시나요?">
-                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="searchInput" placeholder="어떤 식물을 찾으시나요?">
+                <button type="button" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
             <div class="header-icons">
@@ -45,14 +49,14 @@
     <nav class="main-nav">
         <div class="inner">
             <ul class="menu-list">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">동양란관</a></li>
-                <li><a href="#">서양란관</a></li>
-                <li><a href="#" class="point-yellow">근조화환</a></li>
-                <li><a href="#" class="point-yellow">축하화환</a></li>
-                <li><a href="#">꽃바구니</a></li>
-                <li><a href="#">공기정화식물</a></li>
-                <li><a href="#">분재/숯부작</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="category.html?cat=동양란관">동양란관</a></li>
+                <li><a href="category.html?cat=서양란관">서양란관</a></li>
+                <li><a href="category.html?cat=근조화환" class="point-yellow">근조화환</a></li>
+                <li><a href="category.html?cat=축하화환" class="point-yellow">축하화환</a></li>
+                <li><a href="category.html?cat=꽃바구니">꽃바구니</a></li>
+                <li><a href="category.html?cat=공기정화식물">공기정화식물</a></li>
+                <li><a href="category.html?cat=분재/숯부작">분재/숯부작</a></li>
             </ul>
         </div>
     </nav>
@@ -62,7 +66,7 @@
             <div class="banner-text">
                 <h2>일상에 가치를 더하는<br>가장 세련된 꽃 배달</h2>
                 <p>전국 3시간 이내 정성을 다해 안전하게 배송합니다.</p>
-                <a href="#" class="btn-shop">상품 보러가기</a>
+                <a href="category.html?cat=동양란관" class="btn-shop">상품 보러가기</a>
             </div>
         </div>
     </section>
@@ -75,8 +79,8 @@
             </div>
 
             <div class="product-grid">
-                
-                <div class="product-card">
+
+                <div class="product-card" onclick="location.href='category.html?cat=동양란관'">
                     <div class="img-box">
                         <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
                         <span class="tag tag-best">BEST</span>
@@ -86,11 +90,12 @@
                         <h4 class="p-name">이천작품도자기 분청자 철골소심</h4>
                         <div class="p-price-row">
                             <span class="price">150,000원</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart(101, '이천작품도자기 분청자 철골소심')"><i class="fa-solid fa-cart-plus"></i> 담기</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" onclick="location.href='category.html?cat=근조화환'">
                     <div class="img-box">
                         <div class="dummy-img"><i class="fa-solid fa-holly-berry"></i></div>
                         <span class="tag tag-new">NEW</span>
@@ -100,11 +105,12 @@
                         <h4 class="p-name">[정품/기획] 근조 3단 화환 (장례식장 당일배송)</h4>
                         <div class="p-price-row">
                             <span class="price">90,000원</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart(102, '[정품/기획] 근조 3단 화환')"><i class="fa-solid fa-cart-plus"></i> 담기</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" onclick="location.href='category.html?cat=축하화환'">
                     <div class="img-box">
                         <div class="dummy-img"><i class="fa-solid fa-leaf"></i></div>
                     </div>
@@ -113,11 +119,12 @@
                         <h4 class="p-name">[경조사] 품격 축하 3단 화환 (오브제 선택가능)</h4>
                         <div class="p-price-row">
                             <span class="price">95,000원</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart(103, '[경조사] 품격 축하 3단 화환')"><i class="fa-solid fa-cart-plus"></i> 담기</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" onclick="location.href='category.html?cat=서양란관'">
                     <div class="img-box">
                         <div class="dummy-img"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
                     </div>
@@ -126,6 +133,7 @@
                         <h4 class="p-name">화사한 핑크 미니 서양란 (만천홍 화분)</h4>
                         <div class="p-price-row">
                             <span class="price">120,000원</span>
+                            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart(104, '화사한 핑크 미니 서양란')"><i class="fa-solid fa-cart-plus"></i> 담기</button>
                         </div>
                     </div>
                 </div>
@@ -154,6 +162,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    function getCart() { return JSON.parse(localStorage.getItem('nankorea-cart') || '{}'); }
+    function saveCart(c) { localStorage.setItem('nankorea-cart', JSON.stringify(c)); }
+    function getCartCount() { return Object.values(getCart()).reduce(function(s, n) { return s + n; }, 0); }
+    function addToCart(id, name) {
+        var c = getCart(); c[id] = (c[id] || 0) + 1; saveCart(c);
+        updateBadge();
+        showToast('"' + name + '" 장바구니에 담았습니다.');
+    }
+    function updateBadge() {
+        var cnt = getCartCount();
+        document.querySelectorAll('.badge').forEach(function(b) { b.textContent = cnt; });
+    }
+    function showToast(msg) {
+        var t = document.createElement('div');
+        t.className = 'cart-toast'; t.textContent = msg;
+        document.body.appendChild(t);
+        setTimeout(function() { t.classList.add('show'); }, 10);
+        setTimeout(function() { t.classList.remove('show'); setTimeout(function() { t.remove(); }, 300); }, 2200);
+    }
+    function doSearch() {
+        var q = document.getElementById('searchInput').value.trim();
+        if (q) location.href = 'category.html?q=' + encodeURIComponent(q);
+    }
+    document.getElementById('searchBtn').addEventListener('click', doSearch);
+    document.getElementById('searchInput').addEventListener('keydown', function(e) { if (e.key === 'Enter') doSearch(); });
+    updateBadge();
+    </script>
 
 </body>
 </html>
