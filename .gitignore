@@ -3,5 +3,6 @@ node_modules/
 .env
 .DS_Store
 
-# 미러링한 이미지 에셋(134MB) — sync로 재생성 가능하므로 git 제외. 원본 블루샵 sprite/css도 함께 제외.
-assets/
+# 미러링한 상품/배너 이미지(131MB) — npm run sync로 재생성 가능하므로 git 제외.
+assets/images/
+# 단, 블루샵 원본 리소스(css/js/sprite, 3.1MB)는 외관에 필수이고 sync로 재생성 안 되므로 트래킹함(assets/shop/resources/).
