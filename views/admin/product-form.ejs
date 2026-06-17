@@ -1,0 +1,80 @@
+<% var active='products' %><%- include('partials/head') %>
+
+    <div class="adm-head">
+        <h1><%= product ? '상품수정' : '새 상품 등록' %></h1>
+        <a href="/admin/products" class="adm-btn">← 목록으로</a>
+    </div>
+
+    <form class="adm-form" method="post" action="<%= product ? '/admin/products/' + product.productId : '/admin/products' %>" enctype="multipart/form-data">
+
+        <div class="f-row">
+            <label>상품명 <span class="req">*</span></label>
+            <input type="text" name="name" value="<%= product ? product.name : '' %>" required placeholder="예) 이천작품도자기 백자 매화난분">
+        </div>
+
+        <div class="f-grid">
+            <div class="f-row">
+                <label>가격 (원) <span class="req">*</span></label>
+                <input type="number" name="price" value="<%= product ? (product.price || 0) : '' %>" min="0" step="100" required placeholder="150000">
+            </div>
+            <div class="f-row">
+                <label>뱃지 (선택)</label>
+                <input type="text" name="badge" value="<%= product ? (product.badge || '') : '' %>" placeholder="예) BEST, NEW, 분재">
+            </div>
+            <div class="f-row">
+                <label>상품코드</label>
+                <% if (product) { %>
+                    <input type="text" value="<%= product.productId %>" disabled>
+                <% } else { %>
+                    <input type="text" name="productId" placeholder="비워두면 자동생성 (NK…)">
+                <% } %>
+            </div>
+        </div>
+
+        <div class="f-row">
+            <label>카테고리 (복수 선택 가능)</label>
+            <div class="f-cats">
+                <strong>상품분류</strong>
+                <div class="chips">
+                    <% navCats.forEach((c) => { var on = product && (product.categories||[]).includes(c.id); %>
+                        <label class="chip"><input type="checkbox" name="categories" value="<%= c.id %>" <%= on ? 'checked' : '' %>> <%= c.name %></label>
+                    <% }) %>
+                </div>
+                <strong>용도별</strong>
+                <div class="chips">
+                    <% purposeCats.forEach((c) => { var on = product && (product.categories||[]).includes(c.id); %>
+                        <label class="chip"><input type="checkbox" name="categories" value="<%= c.id %>" <%= on ? 'checked' : '' %>> <%= c.name %></label>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-row">
+            <label>대표 이미지</label>
+            <div class="f-img">
+                <div class="cur">
+                    <% if (product && product.images && product.images.medium) { %>
+                        <img src="<%= imgProd(product.images.medium) %>" alt="현재 이미지">
+                    <% } else { %>
+                        <span class="noimg"><i class="fa-solid fa-image"></i><br>이미지 없음</span>
+                    <% } %>
+                </div>
+                <div>
+                    <input type="file" name="image" accept="image/*">
+                    <p class="hint">새 이미지를 선택하면 교체됩니다. 비워두면 기존 이미지 유지.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-row">
+            <label>상품설명 (선택)</label>
+            <textarea name="description" rows="5" placeholder="상품 상세설명 (HTML 가능)"><%= product ? (product.description || '') : '' %></textarea>
+        </div>
+
+        <div class="f-actions">
+            <button type="submit" class="adm-btn primary"><i class="fa-solid fa-floppy-disk"></i> <%= product ? '수정 저장' : '상품 등록' %></button>
+            <a href="/admin/products" class="adm-btn">취소</a>
+        </div>
+    </form>
+
+<%- include('partials/foot') %>

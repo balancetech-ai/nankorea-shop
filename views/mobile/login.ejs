@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+    <div class="m-login">
+        <h1>로그인</h1>
+        <form onsubmit="alert('실제 로그인은 블루마 DB 연동(3단계)에서 활성화됩니다.'); return false;">
+            <input type="text" placeholder="아이디">
+            <input type="password" placeholder="비밀번호">
+            <button type="submit" class="btn">로그인</button>
+        </form>
+        <p class="links">회원가입 · 비회원 주문 · 주문조회는 3단계(DB 연동)에서 활성화됩니다.</p>
+    </div>
+
+<%- include('partials/footer') %>

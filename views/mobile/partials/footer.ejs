@@ -1,0 +1,20 @@
+    <!-- 푸터 -->
+    <footer class="m-footer">
+        <p class="cs">고객센터 <span><%= shop.callCenterNo %></span></p>
+        <p>평일 09:00 - 18:00 / 주말·공휴일 휴무</p>
+        <div class="links">
+            <a href="<%= base %>/login">로그인</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+        </div>
+        <p>
+            <%= shop.companyName %> | 대표: <%= shop.representName %> | 사업자번호 <%= shop.businessNo %><br/>
+            <%= shop.address %> | 통신판매업 <%= shop.eCommerceRegNo %><br/>
+            ⓒ KOREA NANWON. All rights reserved.
+        </p>
+        <a href="/?pc=1" class="pcview"><i class="fa-solid fa-desktop"></i> PC 버전으로 보기</a>
+    </footer>
+
+</div>
+</body>
+</html>

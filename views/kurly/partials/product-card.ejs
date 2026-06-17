@@ -1,0 +1,17 @@
+<a href="<%= base %>/product/<%= p.productId %>" class="product-card">
+    <div class="img-box">
+        <% const thumb = imgProd(p.images && p.images.medium); %>
+        <% if (thumb) { %>
+            <img src="<%= thumb %>" alt="<%= p.name %>" loading="lazy">
+        <% } else { %>
+            <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
+        <% } %>
+        <% if (p.badge) { %><span class="tag tag-best"><%= p.badge %></span><% } %>
+    </div>
+    <div class="info-box">
+        <h4 class="p-name"><%= p.name %></h4>
+        <div class="p-price-row">
+            <span class="price"><%= fmtPrice(p.price) %></span>
+        </div>
+    </div>
+</a>

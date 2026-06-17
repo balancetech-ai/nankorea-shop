@@ -1,0 +1,1740 @@
+{
+  "27745": {
+    "productId": "27745",
+    "name": "수서해당",
+    "listPrice": 150000,
+    "listImage": "27745_2_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "27746": {
+    "productId": "27746",
+    "name": "홍매화",
+    "listPrice": 250000,
+    "listImage": "27746_2_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "27751": {
+    "productId": "27751",
+    "name": "둥근분-황제(서울,경기일부 배송가능)",
+    "listPrice": 80000,
+    "listImage": "27751_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "27752": {
+    "productId": "27752",
+    "name": "금전수(중,중대,대)",
+    "listPrice": 100000,
+    "listImage": "27752_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "27774": {
+    "productId": "27774",
+    "name": "꽃바구니(중대)-핑크믹스",
+    "listPrice": 80000,
+    "listImage": "27774_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "27780": {
+    "productId": "27780",
+    "name": "호접란-포춘",
+    "listPrice": 200000,
+    "listImage": "27780_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "27797": {
+    "productId": "27797",
+    "name": "근조4단",
+    "listPrice": 200000,
+    "listImage": "27797_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "148941": {
+    "productId": "148941",
+    "name": "근조3단-특대",
+    "listPrice": 150000,
+    "listImage": "148941_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "148951": {
+    "productId": "148951",
+    "name": "축하3단-소",
+    "listPrice": 80000,
+    "listImage": "148951_1_M.png",
+    "categories": [
+      "102",
+      "206"
+    ]
+  },
+  "148952": {
+    "productId": "148952",
+    "name": "축하3단-특대",
+    "listPrice": 150000,
+    "listImage": "148952_1_M.png",
+    "categories": [
+      "102",
+      "203",
+      "206"
+    ]
+  },
+  "148958": {
+    "productId": "148958",
+    "name": "축하화환-4단",
+    "listPrice": 200000,
+    "listImage": "148958_1_M.png",
+    "categories": [
+      "102",
+      "206"
+    ]
+  },
+  "148965": {
+    "productId": "148965",
+    "name": "매화",
+    "listPrice": 300000,
+    "listImage": "148965_3_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "148974": {
+    "productId": "148974",
+    "name": "이천작품도자기 투각칠보격자분(회청) - 금릉복륜",
+    "listPrice": 280000,
+    "listImage": "148974_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "148984": {
+    "productId": "148984",
+    "name": "이천작품도자기 투각목단문호 (분청)-(서울,경기일부 배송가능)",
+    "listPrice": 350000,
+    "listImage": "148984_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "149005": {
+    "productId": "149005",
+    "name": "이천작품도자기 투각칠보격자분 -금릉복륜(서울,경기 일부 배송가능)",
+    "listPrice": 280000,
+    "listImage": "149005_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "149021": {
+    "productId": "149021",
+    "name": "달항아리호접(작품)",
+    "listPrice": 500000,
+    "listImage": "149021_2_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "149040": {
+    "productId": "149040",
+    "name": "호접란(화이트)",
+    "listPrice": 250000,
+    "listImage": "149040_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "149042": {
+    "productId": "149042",
+    "name": "만천홍",
+    "listPrice": 150000,
+    "listImage": "149042_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "149043": {
+    "productId": "149043",
+    "name": "호접란(둥근분-핑크)",
+    "listPrice": 150000,
+    "listImage": "149043_2_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "149045": {
+    "productId": "149045",
+    "name": "꽃바구니(중)-퍼플믹스",
+    "listPrice": 70000,
+    "listImage": "149045_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149048": {
+    "productId": "149048",
+    "name": "꽃바구니(대)-핑크파스텔",
+    "listPrice": 100000,
+    "listImage": "149048_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149049": {
+    "productId": "149049",
+    "name": "꽃바구니(대)-핑크",
+    "listPrice": 100000,
+    "listImage": "149049_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149050": {
+    "productId": "149050",
+    "name": "레드하트장미(50송이)",
+    "listPrice": 300000,
+    "listImage": null,
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149051": {
+    "productId": "149051",
+    "name": "레드장미(50송이)",
+    "listPrice": 350000,
+    "listImage": null,
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149052": {
+    "productId": "149052",
+    "name": "꽃바구니(소)-핑크파스텔",
+    "listPrice": 60000,
+    "listImage": "149052_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149053": {
+    "productId": "149053",
+    "name": "꽃바구니(대)-오렌지",
+    "listPrice": 100000,
+    "listImage": "149053_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "149065": {
+    "productId": "149065",
+    "name": "귀주진백",
+    "listPrice": 500000,
+    "listImage": null,
+    "categories": [
+      "109"
+    ]
+  },
+  "149066": {
+    "productId": "149066",
+    "name": "장수매",
+    "listPrice": 300000,
+    "listImage": "149066_3_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "149067": {
+    "productId": "149067",
+    "name": "각엽진산",
+    "listPrice": 250000,
+    "listImage": "149067_2_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "149068": {
+    "productId": "149068",
+    "name": "느릅나무",
+    "listPrice": 250000,
+    "listImage": null,
+    "categories": [
+      "109"
+    ]
+  },
+  "149070": {
+    "productId": "149070",
+    "name": "소사",
+    "listPrice": 250000,
+    "listImage": null,
+    "categories": [
+      "109"
+    ]
+  },
+  "149074": {
+    "productId": "149074",
+    "name": "스투키",
+    "listPrice": 120000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149076": {
+    "productId": "149076",
+    "name": "셀렘",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149077": {
+    "productId": "149077",
+    "name": "안시리움",
+    "listPrice": 100000,
+    "listImage": "149077_1_M.jpg",
+    "categories": [
+      "108"
+    ]
+  },
+  "149079": {
+    "productId": "149079",
+    "name": "산세베리아",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149082": {
+    "productId": "149082",
+    "name": "파키라",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149083": {
+    "productId": "149083",
+    "name": "행복나무",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149084": {
+    "productId": "149084",
+    "name": "숯부작B",
+    "listPrice": 150000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149088": {
+    "productId": "149088",
+    "name": "산세베리아A",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "108"
+    ]
+  },
+  "149094": {
+    "productId": "149094",
+    "name": "★기업주문용_관엽식물",
+    "listPrice": 100000,
+    "listImage": "149094_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "149104": {
+    "productId": "149104",
+    "name": "크로톤(중,중대,대)",
+    "listPrice": 100000,
+    "listImage": "149104_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "149112": {
+    "productId": "149112",
+    "name": "크루시아(중,중대)",
+    "listPrice": 100000,
+    "listImage": "149112_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "149114": {
+    "productId": "149114",
+    "name": "스투키",
+    "listPrice": 120000,
+    "listImage": "149114_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "149122": {
+    "productId": "149122",
+    "name": "행운목(중,중대,대)",
+    "listPrice": 100000,
+    "listImage": "149122_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "149141": {
+    "productId": "149141",
+    "name": "고무나무",
+    "listPrice": 120000,
+    "listImage": "149141_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "149153": {
+    "productId": "149153",
+    "name": "과일바구니-특대",
+    "listPrice": 200000,
+    "listImage": "149153_1_M.png",
+    "categories": [
+      "111",
+      "205"
+    ]
+  },
+  "150265": {
+    "productId": "150265",
+    "name": "축하오브제-1단",
+    "listPrice": 150000,
+    "listImage": "150265_1_M.png",
+    "categories": [
+      "102",
+      "203",
+      "206"
+    ]
+  },
+  "150457": {
+    "productId": "150457",
+    "name": "쌀화환(10kg)+리본",
+    "listPrice": 100000,
+    "listImage": "150457_1_M.jpg",
+    "categories": [
+      "102"
+    ]
+  },
+  "050050": {
+    "productId": "050050",
+    "name": "이천작품도자기 백자 매화난분-황제(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "050050_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050049": {
+    "productId": "050049",
+    "name": "이천작품도자기 청화백자 포도문분-황제(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "050049_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050035": {
+    "productId": "050035",
+    "name": "이천작품도자기 청화백자 석류문분-황제(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "050035_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050033": {
+    "productId": "SP050033",
+    "name": "이천작품도자기 백자 감문분-황제(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050033_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050028": {
+    "productId": "SP050028",
+    "name": "이천작품도자기 청화백자 죽문분-대국(서울,경기일부배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050028_1_M.png",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "050024": {
+    "productId": "050024",
+    "name": "이천작품도자기 청화백자 난초문분-금기(서울,경기일부 배송가능)",
+    "listPrice": 200000,
+    "listImage": "050024_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050003": {
+    "productId": "SP050003",
+    "name": "이천작품도자기 왕관난분-황제(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050003_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050029": {
+    "productId": "SP050029",
+    "name": "이천작품도자기 회청목단문 장경병-대국(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050029_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050046": {
+    "productId": "SP050046",
+    "name": "이천작품도자기 회청빗살장경병 (서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050046_1_M.png",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050043": {
+    "productId": "SP050043",
+    "name": "이천작품도자기 회청목단장경병 - 금황(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050043_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050041": {
+    "productId": "SP050041",
+    "name": "이천작품도자기 회청빗살목단장경병- 금기(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050041_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "050027": {
+    "productId": "050027",
+    "name": "이천작품도자기 용충매화분 -황제(서울,경기일부 배송가능)",
+    "listPrice": 200000,
+    "listImage": "050027_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050011": {
+    "productId": "050011",
+    "name": "이천작품도자기 일자투각목단분-금기(서울,경기일부 배송가능)",
+    "listPrice": 230000,
+    "listImage": "050011_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050021": {
+    "productId": "050021",
+    "name": "이천작품도자기 목단분 용충호 -태양관(서울,경기일부 배송가능)",
+    "listPrice": 350000,
+    "listImage": "050021_1_M.jpg",
+    "categories": [
+      "103",
+      "203"
+    ]
+  },
+  "SP050031": {
+    "productId": "SP050031",
+    "name": "이천작품도자기 일자투각목단분-황제(서울,경기일부 배송가능)",
+    "listPrice": 200000,
+    "listImage": "SP050031_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050052": {
+    "productId": "050052",
+    "name": "이천작품도자기 달항아리-금기(서울,경기일부 배송가능)",
+    "listPrice": 300000,
+    "listImage": "050052_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050009": {
+    "productId": "SP050009",
+    "name": "이천작품도자기 백자달항아리-채운화(서울,경기일부 배송가능)",
+    "listPrice": 320000,
+    "listImage": "SP050009_1_M.png",
+    "categories": [
+      "103",
+      "203"
+    ]
+  },
+  "SP050036": {
+    "productId": "SP050036",
+    "name": "이천작품도자기 백자달항아리(중)-송매(서울,경기일부 배송가능)",
+    "listPrice": 350000,
+    "listImage": "SP050036_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050023": {
+    "productId": "050023",
+    "name": "이천작품도자기 분청자 칠보문-달마중투 (서울,경기일부 배송가능)",
+    "listPrice": 430000,
+    "listImage": "050023_1_M.png",
+    "categories": [
+      "103",
+      "203"
+    ]
+  },
+  "SP050038": {
+    "productId": "SP050038",
+    "name": "이천작품도자기 투각국화문호-금누각(서울,경기 일부 배송가능)",
+    "listPrice": 400000,
+    "listImage": "SP050038_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050034": {
+    "productId": "SP050034",
+    "name": "이천작품도자기 투각국화목단문-황제(서울,경기일부 배송가능)",
+    "listPrice": 320000,
+    "listImage": "SP050034_1_M.png",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "SP050044": {
+    "productId": "SP050044",
+    "name": "이천작품도자기 격자분 - 어성복륜 동출도(서울,경기일부 배송가능)",
+    "listPrice": 400000,
+    "listImage": "SP050044_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050007": {
+    "productId": "050007",
+    "name": "이천작품도자기 달마중투(서울,경기일부 배송가능)",
+    "listPrice": 500000,
+    "listImage": "050007_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050022": {
+    "productId": "SP050022",
+    "name": "이천작품도자기 투각칠보분 중 (회청) - 대국",
+    "listPrice": 300000,
+    "listImage": "SP050022_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "SP050026": {
+    "productId": "SP050026",
+    "name": "이천작품도자기 투각국화문호(춘란)서울,경기일부 배송가능)",
+    "listPrice": 350000,
+    "listImage": "SP050026_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050037": {
+    "productId": "SP050037",
+    "name": "이천작품도자기 투각칠보격자분(중)-송매(서울,경기일부 배송가능)",
+    "listPrice": 350000,
+    "listImage": "SP050037_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050042": {
+    "productId": "050042",
+    "name": "이천작품도자기 분청자칠보문(서울,경기일부 배송가능)",
+    "listPrice": 400000,
+    "listImage": "050042_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP050027": {
+    "productId": "SP050027",
+    "name": "이천작품도자기 청자태양금-(서울,경기일부 배송가능)",
+    "listPrice": 400000,
+    "listImage": "SP050027_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050025": {
+    "productId": "050025",
+    "name": "낙소분-황금기",
+    "listPrice": 100000,
+    "listImage": "050025_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "050026": {
+    "productId": "050026",
+    "name": "금곽분-금기(서울,경기일부배송가능)",
+    "listPrice": 150000,
+    "listImage": "050026_1_M.jpg",
+    "categories": [
+      "103",
+      "203",
+      "204"
+    ]
+  },
+  "050043": {
+    "productId": "050043",
+    "name": "화이트-황제",
+    "listPrice": 70000,
+    "listImage": "050043_2_M.png",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "SP050010": {
+    "productId": "SP050010",
+    "name": "사각분(서울,경기 일부 배송가능)",
+    "listPrice": 80000,
+    "listImage": "SP050010_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050028": {
+    "productId": "050028",
+    "name": "줄무늬토분-황제",
+    "listPrice": 70000,
+    "listImage": "050028_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "050022": {
+    "productId": "050022",
+    "name": "토분-석곡(서울,경기일부 배송가능)",
+    "listPrice": 80000,
+    "listImage": "050022_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050005": {
+    "productId": "050005",
+    "name": "황용금",
+    "listPrice": 100000,
+    "listImage": "050005_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050054": {
+    "productId": "050054",
+    "name": "매화난분-황용금",
+    "listPrice": 100000,
+    "listImage": "050054_1_M.jpg",
+    "categories": [
+      "103",
+      "204"
+    ]
+  },
+  "SP050045": {
+    "productId": "SP050045",
+    "name": "이천작품도자기 백자분 - 금릉복륜(서울,경기일부 배송가능)",
+    "listPrice": 180000,
+    "listImage": "SP050045_1_M.jpg",
+    "categories": [
+      "103"
+    ]
+  },
+  "050029": {
+    "productId": "050029",
+    "name": "소엽풍란",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050030": {
+    "productId": "050030",
+    "name": "옥관",
+    "listPrice": 200000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050051": {
+    "productId": "050051",
+    "name": "환희",
+    "listPrice": 70000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050053": {
+    "productId": "050053",
+    "name": "환희(검정고급)",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050033": {
+    "productId": "050033",
+    "name": "옥화",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050039": {
+    "productId": "050039",
+    "name": "채홍",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050045": {
+    "productId": "050045",
+    "name": "태양금",
+    "listPrice": 150000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050056": {
+    "productId": "050056",
+    "name": "황룡관청자",
+    "listPrice": 150000,
+    "listImage": null,
+    "categories": [
+      "103"
+    ]
+  },
+  "050034": {
+    "productId": "050034",
+    "name": "황룡관백자",
+    "listPrice": 100000,
+    "listImage": "050034_1_M.png",
+    "categories": [
+      "103"
+    ]
+  },
+  "SP060033": {
+    "productId": "SP060033",
+    "name": "둥근분-주피터",
+    "listPrice": 250000,
+    "listImage": "SP060033_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060028": {
+    "productId": "060028",
+    "name": "★기업주문용_서양란★",
+    "listPrice": 100000,
+    "listImage": "060028_1_M.png",
+    "categories": [
+      "104"
+    ]
+  },
+  "060029": {
+    "productId": "060029",
+    "name": "호접란-미니스트라이프",
+    "listPrice": 180000,
+    "listImage": "060029_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060040": {
+    "productId": "060040",
+    "name": "호접란-레이",
+    "listPrice": 250000,
+    "listImage": "060040_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060014": {
+    "productId": "SP060014",
+    "name": "원형분-줄리아",
+    "listPrice": 200000,
+    "listImage": "SP060014_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060016": {
+    "productId": "SP060016",
+    "name": "원형분-르네상스",
+    "listPrice": 300000,
+    "listImage": "SP060016_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060036": {
+    "productId": "SP060036",
+    "name": "사각분-삼색조",
+    "listPrice": 200000,
+    "listImage": "SP060036_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060003": {
+    "productId": "SP060003",
+    "name": "원형분 -호접란(화이트)",
+    "listPrice": 250000,
+    "listImage": "SP060003_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060015": {
+    "productId": "SP060015",
+    "name": "원형분-그린베어",
+    "listPrice": 150000,
+    "listImage": "SP060015_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060005": {
+    "productId": "SP060005",
+    "name": "호접란-리틀잼",
+    "listPrice": 150000,
+    "listImage": "SP060005_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060031": {
+    "productId": "SP060031",
+    "name": "둥근분-비바체",
+    "listPrice": 120000,
+    "listImage": "SP060031_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060020": {
+    "productId": "SP060020",
+    "name": "달항아리(소)-카틀레야",
+    "listPrice": 250000,
+    "listImage": "SP060020_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "SP060034": {
+    "productId": "SP060034",
+    "name": "호접란-그린",
+    "listPrice": 130000,
+    "listImage": "SP060034_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060024": {
+    "productId": "SP060024",
+    "name": "근조서양란",
+    "listPrice": 200000,
+    "listImage": "SP060024_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060026": {
+    "productId": "SP060026",
+    "name": "달항아리-레이",
+    "listPrice": 130000,
+    "listImage": "SP060026_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060014": {
+    "productId": "060014",
+    "name": "미니호접(금나리)",
+    "listPrice": 120000,
+    "listImage": "060014_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060030": {
+    "productId": "060030",
+    "name": "호접란",
+    "listPrice": 120000,
+    "listImage": "060030_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060031": {
+    "productId": "060031",
+    "name": "호접란-만천홍",
+    "listPrice": 120000,
+    "listImage": "060031_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060032": {
+    "productId": "060032",
+    "name": "호접란-르네상스",
+    "listPrice": 100000,
+    "listImage": "060032_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060034": {
+    "productId": "060034",
+    "name": "호접란(루치아핑크)",
+    "listPrice": 150000,
+    "listImage": "060034_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060035": {
+    "productId": "060035",
+    "name": "호접란-그린베어",
+    "listPrice": 150000,
+    "listImage": "060035_1_M.jpg",
+    "categories": [
+      "104",
+      "203"
+    ]
+  },
+  "060037": {
+    "productId": "060037",
+    "name": "호접란-레이",
+    "listPrice": 200000,
+    "listImage": "060037_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060038": {
+    "productId": "060038",
+    "name": "호접란-비바체",
+    "listPrice": 200000,
+    "listImage": "060038_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060039": {
+    "productId": "060039",
+    "name": "호접란-주피터",
+    "listPrice": 250000,
+    "listImage": "060039_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060041": {
+    "productId": "060041",
+    "name": "호접란-k9",
+    "listPrice": 250000,
+    "listImage": "060041_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060043": {
+    "productId": "060043",
+    "name": "호접란(레드립)",
+    "listPrice": 150000,
+    "listImage": "060043_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060042": {
+    "productId": "060042",
+    "name": "호접란-오렌지",
+    "listPrice": 250000,
+    "listImage": "060042_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060035": {
+    "productId": "SP060035",
+    "name": "둥근분-금나비",
+    "listPrice": 200000,
+    "listImage": "SP060035_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060010": {
+    "productId": "060010",
+    "name": "호접란-샤론",
+    "listPrice": 150000,
+    "listImage": "060010_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060033": {
+    "productId": "060033",
+    "name": "호접란-네추럴오렌지",
+    "listPrice": 150000,
+    "listImage": "060033_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "SP060013": {
+    "productId": "SP060013",
+    "name": "원형분-레이",
+    "listPrice": 120000,
+    "listImage": "SP060013_1_M.jpg",
+    "categories": [
+      "104"
+    ]
+  },
+  "060003": {
+    "productId": "060003",
+    "name": "덴파레(엘사쿨)",
+    "listPrice": 120000,
+    "listImage": null,
+    "categories": [
+      "104"
+    ]
+  },
+  "060015": {
+    "productId": "060015",
+    "name": "미니호접(티니허니)",
+    "listPrice": 70000,
+    "listImage": null,
+    "categories": [
+      "104"
+    ]
+  },
+  "060016": {
+    "productId": "060016",
+    "name": "신비디움(노랑)-겨울상품",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "104"
+    ]
+  },
+  "060017": {
+    "productId": "060017",
+    "name": "신비디움(분홍)-겨울상품",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "104"
+    ]
+  },
+  "060001": {
+    "productId": "060001",
+    "name": "덴파레(노랑)",
+    "listPrice": 100000,
+    "listImage": null,
+    "categories": [
+      "104"
+    ]
+  },
+  "SP040011": {
+    "productId": "SP040011",
+    "name": "근조3단-소",
+    "listPrice": 80000,
+    "listImage": "SP040011_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "040002": {
+    "productId": "040002",
+    "name": "근조3단-기본",
+    "listPrice": 100000,
+    "listImage": "040002_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "SP040007": {
+    "productId": "SP040007",
+    "name": "근조바구니",
+    "listPrice": 100000,
+    "listImage": "SP040007_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "SP040018": {
+    "productId": "SP040018",
+    "name": "근조스탠드-1단",
+    "listPrice": 150000,
+    "listImage": "SP040018_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "SP040014": {
+    "productId": "SP040014",
+    "name": "근조스탠드-2단",
+    "listPrice": 200000,
+    "listImage": "SP040014_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "SP040019": {
+    "productId": "SP040019",
+    "name": "근조스탠드-2단고급",
+    "listPrice": 300000,
+    "listImage": "SP040019_1_M.png",
+    "categories": [
+      "101",
+      "207"
+    ]
+  },
+  "SP030006": {
+    "productId": "SP030006",
+    "name": "축하3단-기본",
+    "listPrice": 100000,
+    "listImage": "SP030006_1_M.png",
+    "categories": [
+      "102",
+      "203",
+      "206"
+    ]
+  },
+  "SP030003": {
+    "productId": "SP030003",
+    "name": "축하2단스탠드-판넬",
+    "listPrice": 300000,
+    "listImage": "SP030003_1_M.png",
+    "categories": [
+      "102",
+      "203",
+      "206"
+    ]
+  },
+  "SP010002": {
+    "productId": "SP010002",
+    "name": "꽃바구니(소)-핑크믹스",
+    "listPrice": 60000,
+    "listImage": "SP010002_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "SP010006": {
+    "productId": "SP010006",
+    "name": "꽃바구니(중)-핑크믹스",
+    "listPrice": 70000,
+    "listImage": "SP010006_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "SP010011": {
+    "productId": "SP010011",
+    "name": "꽃바구니(중)-핑크파스텔",
+    "listPrice": 70000,
+    "listImage": "SP010011_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "SP010013": {
+    "productId": "SP010013",
+    "name": "꽃바구니(중)-트로피칼",
+    "listPrice": 70000,
+    "listImage": "SP010013_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "SP010004": {
+    "productId": "SP010004",
+    "name": "꽃바구니(중대)-레드장미",
+    "listPrice": 80000,
+    "listImage": "SP010004_1_M.png",
+    "categories": [
+      "105",
+      "201",
+      "202",
+      "205"
+    ]
+  },
+  "SP010017": {
+    "productId": "SP010017",
+    "name": "꽃바구니(대)-오렌지파스텔",
+    "listPrice": 120000,
+    "listImage": "SP010017_1_M.png",
+    "categories": [
+      "105",
+      "202"
+    ]
+  },
+  "SP010015": {
+    "productId": "SP010015",
+    "name": "꽃바구니(대)-핑크믹스",
+    "listPrice": 150000,
+    "listImage": "SP010015_1_M.png",
+    "categories": [
+      "105",
+      "202"
+    ]
+  },
+  "SP010016": {
+    "productId": "SP010016",
+    "name": "꽃바구니(특대)-오렌지",
+    "listPrice": 180000,
+    "listImage": "SP010016_1_M.png",
+    "categories": [
+      "105",
+      "202"
+    ]
+  },
+  "SP010014": {
+    "productId": "SP010014",
+    "name": "꽃바구니(특대)-파스텔믹스",
+    "listPrice": 200000,
+    "listImage": "SP010014_1_M.png",
+    "categories": [
+      "105",
+      "202"
+    ]
+  },
+  "SP130011": {
+    "productId": "SP130011",
+    "name": "과일바구니-기본",
+    "listPrice": 120000,
+    "listImage": "SP130011_1_M.png",
+    "categories": [
+      "111",
+      "205"
+    ]
+  },
+  "SP130012": {
+    "productId": "SP130012",
+    "name": "과일바구니-중",
+    "listPrice": 150000,
+    "listImage": "SP130012_1_M.png",
+    "categories": [
+      "111",
+      "205"
+    ]
+  },
+  "SP130010": {
+    "productId": "SP130010",
+    "name": "과일바구니-대",
+    "listPrice": 180000,
+    "listImage": "SP130010_1_M.png",
+    "categories": [
+      "111",
+      "205"
+    ]
+  },
+  "SP070047": {
+    "productId": "SP070047",
+    "name": "송오브인디아",
+    "listPrice": 180000,
+    "listImage": "SP070047_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070004": {
+    "productId": "SP070004",
+    "name": "떡갈고무나무(중,대,특대)",
+    "listPrice": 100000,
+    "listImage": "SP070004_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070012": {
+    "productId": "SP070012",
+    "name": "여인초(중,대,특대)",
+    "listPrice": 100000,
+    "listImage": "SP070012_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070017": {
+    "productId": "SP070017",
+    "name": "보석금전수(중,중대)",
+    "listPrice": 100000,
+    "listImage": "SP070017_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "070015": {
+    "productId": "070015",
+    "name": "드라세나 드라코(중,중대,대)",
+    "listPrice": 100000,
+    "listImage": "070015_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070031": {
+    "productId": "SP070031",
+    "name": "아레카야자(중,중대,대)",
+    "listPrice": 100000,
+    "listImage": "SP070031_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070010": {
+    "productId": "SP070010",
+    "name": "녹보수(중,대,특대)",
+    "listPrice": 100000,
+    "listImage": "SP070010_1_M.png",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070028": {
+    "productId": "SP070028",
+    "name": "대엽홍콩",
+    "listPrice": 250000,
+    "listImage": "SP070028_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070030": {
+    "productId": "SP070030",
+    "name": "아가베",
+    "listPrice": 500000,
+    "listImage": "SP070030_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070037": {
+    "productId": "SP070037",
+    "name": "아인스톤",
+    "listPrice": 150000,
+    "listImage": "SP070037_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070041": {
+    "productId": "SP070041",
+    "name": "알로카시아",
+    "listPrice": 150000,
+    "listImage": "SP070041_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070042": {
+    "productId": "SP070042",
+    "name": "황금죽",
+    "listPrice": 130000,
+    "listImage": "SP070042_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070027": {
+    "productId": "SP070027",
+    "name": "홍콩야자",
+    "listPrice": 300000,
+    "listImage": "SP070027_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070023": {
+    "productId": "SP070023",
+    "name": "아가베",
+    "listPrice": 500000,
+    "listImage": "SP070023_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070014": {
+    "productId": "SP070014",
+    "name": "흑고무나무",
+    "listPrice": 200000,
+    "listImage": "SP070014_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP070045": {
+    "productId": "SP070045",
+    "name": "황금죽",
+    "listPrice": 150000,
+    "listImage": "SP070045_1_M.jpg",
+    "categories": [
+      "107"
+    ]
+  },
+  "SP080004": {
+    "productId": "SP080004",
+    "name": "콩고",
+    "listPrice": 60000,
+    "listImage": "SP080004_1_M.png",
+    "categories": [
+      "108"
+    ]
+  },
+  "SP070024": {
+    "productId": "SP070024",
+    "name": "커피나무",
+    "listPrice": 70000,
+    "listImage": "SP070024_1_M.jpg",
+    "categories": [
+      "108"
+    ]
+  },
+  "SP090001": {
+    "productId": "SP090001",
+    "name": "피라칸셔스",
+    "listPrice": 250000,
+    "listImage": "SP090001_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090002": {
+    "productId": "SP090002",
+    "name": "달항아리-매화",
+    "listPrice": 350000,
+    "listImage": "SP090002_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090016": {
+    "productId": "SP090016",
+    "name": "분재-소나무",
+    "listPrice": 300000,
+    "listImage": "SP090016_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090007": {
+    "productId": "SP090007",
+    "name": "★-기업주문용-분재",
+    "listPrice": 200000,
+    "listImage": "SP090007_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090013": {
+    "productId": "SP090013",
+    "name": "분재-소나무",
+    "listPrice": 250000,
+    "listImage": "SP090013_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090014": {
+    "productId": "SP090014",
+    "name": "소나무 분재",
+    "listPrice": 250000,
+    "listImage": "SP090014_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090015": {
+    "productId": "SP090015",
+    "name": "분재",
+    "listPrice": 300000,
+    "listImage": "SP090015_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090017": {
+    "productId": "SP090017",
+    "name": "분재-소나무",
+    "listPrice": 250000,
+    "listImage": "SP090017_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090018": {
+    "productId": "SP090018",
+    "name": "분재-소나무",
+    "listPrice": 250000,
+    "listImage": "SP090018_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090006": {
+    "productId": "SP090006",
+    "name": "소나무 분재",
+    "listPrice": 350000,
+    "listImage": "SP090006_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090004": {
+    "productId": "SP090004",
+    "name": "매화",
+    "listPrice": 250000,
+    "listImage": "SP090004_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP090003": {
+    "productId": "SP090003",
+    "name": "매화",
+    "listPrice": 250000,
+    "listImage": "SP090003_1_M.jpg",
+    "categories": [
+      "109"
+    ]
+  },
+  "SP050025": {
+    "productId": "SP050025",
+    "name": "이천작품도자기 분청자 칠보문-칼라긴기아난(서울,경기일부 배송가능)",
+    "listPrice": 400000,
+    "listImage": "SP050025_1_M.png",
+    "categories": [
+      "204"
+    ]
+  }
+}

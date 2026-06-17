@@ -1,0 +1,8 @@
+<a href="<%= base %>/product/<%= p.productId %>" class="card">
+    <div class="thumb">
+        <img src="<%= imgProd(p.images && p.images.medium) %>" alt="<%= p.name %>" loading="lazy" onerror="this.src='/shop/resources/img/noimage_240.gif';">
+        <% if (p.badge) { %><span class="badge"><%= p.badge %></span><% } %>
+    </div>
+    <div class="name"><%= p.name %></div>
+    <div class="price"><%= Number(p.price || 0).toLocaleString('ko-KR') %>원</div>
+</a>

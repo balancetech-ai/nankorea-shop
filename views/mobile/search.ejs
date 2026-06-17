@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+    <div class="m-listhead">
+        <h1><% if (q) { %>'<%= q %>' 검색결과 <em><%= products.length %></em><% } else { %>상품검색<% } %></h1>
+    </div>
+
+    <% if (!q) { %>
+        <p class="m-empty">상단 검색창에 상품명을 입력하세요.</p>
+    <% } else if (products.length === 0) { %>
+        <p class="m-empty">'<%= q %>'에 대한 검색결과가 없습니다.</p>
+    <% } else { %>
+        <div class="m-grid">
+            <% products.forEach((p) => { %><%- include('partials/card', { p }) %><% }) %>
+        </div>
+    <% } %>
+
+<%- include('partials/footer') %>

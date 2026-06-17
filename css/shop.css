@@ -1,0 +1,118 @@
+/* ==========================================================================
+   한국난원 - Step2 실데이터 연동 추가 스타일 (kurly.css 위에 덧입힘)
+   ========================================================================== */
+
+/* 상품 카드를 a 링크로 사용 */
+a.product-card { display: block; color: inherit; }
+.product-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.product-card:hover .img-box img { transform: scale(1.03); }
+
+/* 카테고리 바로가기 칩 */
+.cat-shortcuts { border-bottom: 1px solid #f4f4f4; }
+.cat-shortcuts .inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 24px 0;
+}
+.cat-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid #eee;
+    border-radius: 24px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+.cat-chip:hover { border-color: #5f0080; color: #5f0080; }
+.cat-chip .cat-count { font-size: 11px; color: #bbb; }
+
+/* 페이지 헤더 / 브레드크럼 */
+.page-head { padding: 30px 0 10px; }
+.breadcrumb { font-size: 12px; color: #999; margin-bottom: 10px; }
+.breadcrumb a:hover { color: #5f0080; }
+.breadcrumb i { margin: 0 4px; font-size: 10px; color: #ccc; }
+.page-head h2 { font-size: 24px; font-weight: 700; }
+.page-head h2 em { color: #5f0080; font-style: normal; font-size: 16px; margin-left: 6px; }
+.empty { text-align: center; color: #999; padding: 80px 0; }
+
+/* 상품 상세 */
+.detail-wrap { padding: 30px 0 50px; }
+.detail-grid { display: grid; grid-template-columns: 480px 1fr; gap: 40px; }
+.detail-img { background: #f7f7f7; aspect-ratio: 1 / 1; overflow: hidden; }
+.detail-img img { width: 100%; height: 100%; object-fit: cover; }
+.detail-img .dummy-img { font-size: 64px; }
+.detail-info { padding-top: 10px; }
+.d-badge {
+    display: inline-block;
+    background: #bd76e9;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+.d-name { font-size: 26px; font-weight: 700; line-height: 1.3; margin-bottom: 18px; }
+.d-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.d-meta { width: 100%; font-size: 13px; margin-bottom: 24px; }
+.d-meta th {
+    text-align: left;
+    color: #999;
+    font-weight: 400;
+    width: 90px;
+    padding: 6px 0;
+    vertical-align: top;
+}
+.d-meta td { padding: 6px 0; }
+.d-options { margin-bottom: 24px; }
+.d-options label { display: block; font-size: 13px; color: #666; margin-bottom: 6px; }
+.d-options select {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+.d-actions { display: flex; gap: 10px; }
+.d-actions button {
+    flex: 1;
+    height: 54px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-cart { background: #fff; border: 1px solid #5f0080 !important; color: #5f0080; }
+.btn-buy { background: #5f0080; color: #fff; }
+
+/* 상세 설명 */
+.detail-desc { padding: 40px 0; border-top: 8px solid #f7f7f7; }
+.detail-desc h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; text-align: center; }
+.detail-desc .desc-text { line-height: 1.7; margin-bottom: 20px; }
+.detail-desc img { display: block; max-width: 100%; margin: 0 auto; }
+
+/* 반응형 */
+@media (max-width: 1080px) {
+    .inner { width: 100%; padding-left: 16px; padding-right: 16px; }
+    .detail-grid { grid-template-columns: 1fr; gap: 24px; }
+    .detail-img { max-width: 480px; margin: 0 auto; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .main-nav .menu-list { flex-wrap: wrap; height: auto; padding: 8px 0; }
+    .main-nav .menu-list li { margin: 4px 12px; }
+}

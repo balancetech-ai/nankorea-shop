@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+    <section class="main-banner">
+        <div class="inner">
+            <div class="banner-text">
+                <h2>일상에 가치를 더하는<br>가장 세련된 꽃과 난 배달</h2>
+                <p>전국 정성을 다해 안전하게 배송합니다.</p>
+                <a href="<%= base %>/category/<%= navCategories[0].id %>" class="btn-shop">상품 보러가기</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cat-shortcuts">
+        <div class="inner">
+            <% navCategories.forEach((c) => { %>
+                <a href="<%= base %>/category/<%= c.id %>" class="cat-chip">
+                    <span class="cat-name"><%= c.name %></span>
+                    <span class="cat-count"><%= c.count %></span>
+                </a>
+            <% }) %>
+        </div>
+    </section>
+
+    <main class="main-products">
+        <div class="inner">
+            <div class="section-header">
+                <h3>Best Sellers</h3>
+                <p>한국난원 대표 상품입니다.</p>
+            </div>
+
+            <div class="product-grid">
+                <% featured.forEach((p) => { %>
+                    <%- include('partials/product-card', { p }) %>
+                <% }) %>
+            </div>
+        </div>
+    </main>
+
+<%- include('partials/footer') %>

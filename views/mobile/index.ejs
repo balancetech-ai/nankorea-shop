@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+    <!-- 카테고리 가로칩 -->
+    <div class="m-cats">
+        <a href="<%= base %>/" class="on">전체</a>
+        <% navCategories.forEach((c) => { %>
+            <a href="<%= base %>/category/<%= c.id %>"><%= c.name %></a>
+        <% }) %>
+    </div>
+
+    <!-- 배너 -->
+    <div class="m-banner">
+        <a href="<%= base %>/category/<%= navCategories[0].id %>"><img src="<%= imgEvent('20240826/163105727.jpg') %>" alt="한국난원"></a>
+    </div>
+
+    <div class="m-sec-title">추천상품<span>BEST</span></div>
+    <div class="m-grid">
+        <% featured.forEach((p) => { %><%- include('partials/card', { p }) %><% }) %>
+    </div>
+
+    <div class="m-sec-title">베스트상품</div>
+    <div class="m-grid">
+        <% best.forEach((p) => { %><%- include('partials/card', { p }) %><% }) %>
+    </div>
+
+<%- include('partials/footer') %>

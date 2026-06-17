@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+
+    <div class="m-detail">
+        <div class="d-img">
+            <img src="<%= imgProd(product.images && (product.images.large || product.images.medium)) %>" alt="<%= product.name %>" onerror="this.src='/shop/resources/img/noimage_240.gif';">
+        </div>
+        <div class="d-info">
+            <div class="d-cat"><%= cat ? cat.name : '상품' %></div>
+            <div class="d-name"><%= product.name %></div>
+            <div class="d-price"><%= Number(product.price || 0).toLocaleString('ko-KR') %>원</div>
+            <div class="d-meta">상품코드 <%= product.productId %></div>
+        </div>
+
+        <% const descImgs = (product.images && product.images.desc) || []; %>
+        <div class="d-sec-title">상품 상세정보</div>
+        <div class="d-desc">
+            <% const big = imgProd(product.images && (product.images.large || product.images.medium)); %>
+            <% if (big) { %><img src="<%= big %>" alt="<%= product.name %>"><% } %>
+            <% if (product.description) { %><div style="line-height:1.7;"><%- product.description %></div><% } %>
+            <% descImgs.forEach((f) => { %><img src="<%= imgProdDesc(f) %>" alt="상세이미지" loading="lazy"><% }) %>
+        </div>
+
+        <% if (related && related.length) { %>
+            <div class="d-sec-title">연관상품</div>
+            <div class="m-related">
+                <% related.forEach((rp) => { %>
+                    <a href="<%= base %>/product/<%= rp.productId %>">
+                        <div class="thumb"><img src="<%= imgProd(rp.images && (rp.images.small || rp.images.medium)) %>" alt="<%= rp.name %>" loading="lazy" onerror="this.src='/shop/resources/img/noimage_120.gif';"></div>
+                        <div class="name"><%= rp.name %></div>
+                        <div class="price"><%= Number(rp.price || 0).toLocaleString('ko-KR') %>원</div>
+                    </a>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+
+    <div class="m-buybar">
+        <button class="cart" onclick="alert('장바구니는 3단계(DB 연동)에서 활성화됩니다.');"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="buy" onclick="alert('주문/결제는 3단계(DB 연동)에서 활성화됩니다.');">바로 구매하기</button>
+    </div>
+
+<%- include('partials/footer') %>

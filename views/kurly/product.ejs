@@ -1,0 +1,76 @@
+<%- include('partials/header') %>
+
+    <div class="page-head">
+        <div class="inner">
+            <nav class="breadcrumb">
+                <a href="<%= base %>/">Home</a> <i class="fa-solid fa-angle-right"></i>
+                <% if (cat) { %><a href="<%= base %>/category/<%= cat.id %>"><%= cat.name %></a> <i class="fa-solid fa-angle-right"></i><% } %>
+                <span><%= product.name %></span>
+            </nav>
+        </div>
+    </div>
+
+    <section class="detail-wrap">
+        <div class="inner detail-grid">
+            <div class="detail-img">
+                <% const big = imgProd(product.images && (product.images.large || product.images.medium)); %>
+                <% if (big) { %>
+                    <img src="<%= big %>" alt="<%= product.name %>">
+                <% } else { %>
+                    <div class="dummy-img"><i class="fa-solid fa-seedling"></i></div>
+                <% } %>
+            </div>
+            <div class="detail-info">
+                <% if (product.badge) { %><span class="d-badge"><%= product.badge %></span><% } %>
+                <h1 class="d-name"><%= product.name %></h1>
+                <div class="d-price" id="dPrice"><%= fmtPrice(product.price) %></div>
+
+                <table class="d-meta">
+                    <tr><th>상품코드</th><td><%= product.productId %></td></tr>
+                    <% if (cat) { %><tr><th>분류</th><td><%= cat.name %></td></tr><% } %>
+                </table>
+
+                <% if (product.options && product.options.length > 1) { %>
+                    <div class="d-options">
+                        <label>옵션 선택</label>
+                        <select id="dOptions">
+                            <% product.options.forEach((o, i) => { %>
+                                <option value="<%= i %>" data-price="<%= Number(o.salePrice || o.price || 0) %>">옵션 <%= i + 1 %> · <%= fmtPrice(o.salePrice || o.price) %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+                <% } %>
+
+                <div class="d-actions">
+                    <button type="button" class="btn-cart" onclick="alert('장바구니는 3단계(DB 연동)에서 활성화됩니다.');"><i class="fa-solid fa-bag-shopping"></i> 장바구니</button>
+                    <button type="button" class="btn-buy" onclick="alert('주문/결제는 3단계(DB 연동)에서 활성화됩니다.');">바로구매</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    (function () {
+        var sel = document.getElementById('dOptions');
+        var priceEl = document.getElementById('dPrice');
+        if (!sel || !priceEl) return;
+        sel.addEventListener('change', function () {
+            var opt = sel.options[sel.selectedIndex];
+            var p = Number(opt.getAttribute('data-price')) || 0;
+            priceEl.textContent = p.toLocaleString('ko-KR') + '원';
+        });
+    })();
+    </script>
+
+    <% const descImgs = (product.images && product.images.desc) || []; %>
+    <% if (product.description || descImgs.length) { %>
+        <section class="detail-desc">
+            <div class="inner">
+                <h3>상품 상세정보</h3>
+                <% if (product.description) { %><div class="desc-text"><%- product.description %></div><% } %>
+                <% descImgs.forEach((f) => { %><img src="<%= imgProdDesc(f) %>" alt="상세이미지" loading="lazy"><% }) %>
+            </div>
+        </section>
+    <% } %>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,23 @@
+<% var active='categories' %><%- include('partials/head') %>
+
+    <div class="adm-head">
+        <h1>카테고리</h1>
+        <span class="adm-note">상품별 카테고리 소속은 각 상품 수정화면에서 변경합니다.</span>
+    </div>
+
+    <table class="adm-table">
+        <thead><tr><th>코드</th><th>이름</th><th>구분</th><th>상품 수</th><th></th></tr></thead>
+        <tbody>
+            <% categories.forEach((c) => { %>
+                <tr>
+                    <td class="c-code"><%= c.id %></td>
+                    <td class="c-name"><%= c.name %></td>
+                    <td><%= c.group === 'product' ? '상품분류' : '용도별' %></td>
+                    <td><%= (c.productIds || []).length %>개</td>
+                    <td><a href="/admin/products?cat=<%= c.id %>" class="adm-btn sm">상품보기</a></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+<%- include('partials/foot') %>

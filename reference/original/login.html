@@ -1,0 +1,893 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv = "p3p" content = 'CP="CAO DSP AND SO " policyref="/w3c/p3p.xml"'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>플라워샵 ::: 로그인</title>
+<link rel="shortcut icon" href="/shop/favicon.ico">
+<link rel="stylesheet" href="/shop/resources/css/style01.css">
+<link rel="stylesheet" media="handheld" href="/shop/resources/css/handheld.css">
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+<!--
+var DOC = {
+    ROOT : "/shop/"
+};
+//-->
+</script>
+<script type="text/javascript" src="/shop/resources/js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="/shop/resources/js/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/shop/resources/js/jquery-ui-1.8.4.custom.min.js"></script>
+<script type="text/javascript" src="/shop/resources/js/nexutil.js"></script>
+<script type="text/javascript" src="/shop/resources/js/plugins.js?v=1"></script>
+<script type="text/javascript" src="/shop/resources/js/script.js?v=1"></script>
+<script type="text/javascript" src="/shop/resources/js/common.js"></script>
+</head>
+<body>
+
+<div class="mainwrapper">
+    <!-- ☆☆☆☆☆☆☆☆☆ header s ☆☆☆☆☆☆☆☆☆ -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ☆☆☆☆☆☆☆☆☆ header s ☆☆☆☆☆☆☆☆☆ -->
+
+<header>
+    <h1>
+        <a href="/shop/main">
+        	
+	        	
+		            <img src="https://resource.flowerteam.kr/images/fs_shop/S0000149/headerLogo_20240823140448511.png" alt='logo'/>
+	        	
+	        	
+        	
+        </a>
+    </h1>
+    <address>
+		
+        	
+	            <img src="https://resource.flowerteam.kr/images/fs_shop/S0000149/headerTelephone_20240823144222256.png" alt='telephone' width="138px" height="118px"/>
+        	
+        	
+       	
+    </address>
+    
+    <nav class="topmenuleft">
+        <ul>
+            <li class="d01"><a href="/shop/customerCenter/information">이용안내</a></li>
+            <li class="d02"><a href="/shop/customerCenter/tip/tipCallCenter">전화주문안내</a></li>
+            <li class="d03"><a href="javascript:createBookmarkLink();">즐겨찾기</a></li>
+        </ul>
+    
+		<form action="/shop/shopproduct/productSearch" method="post" id="headerSearchForm">
+			<fieldset>
+				<legend>상품검색</legend>
+				<label>상품검색</label><input type="text" class="searchWord" name="productName">
+				<button type="submit">검색</button>
+				<a href="/shop/shopproduct/productSearch"></a>
+			 </fieldset>
+		</form>
+    </nav>
+	
+	
+	    <nav class="topmenuright">
+    	    <ol>           
+				<li class="login"><a href="/shop/login">로그인</a></li>
+				<li class="join"><a href="/shop/join/joinInformation">회원가입</a></li>
+				<li class="orderCheck"><a href="/shop/shoporder/orderCheckList">주문조회</a></li>
+				<li class="shopGuide"><a href="/shop/customerCenter/information">쇼핑가이드</a></li>
+			</ol>
+		</nav>
+	
+	
+
+    <div id="div_notice">
+        <article class="topnotice">
+            <!-- 공지사항 조회 -->
+            <h3><a href="/shop/board/14/noticeBoardList">공지사항</a></h3>
+            <ol id="newstickerlist" >
+            </ol>
+        </article>
+    </div>
+    <nav class="mainmenu">
+        <h1>모든 카테고리</h1>
+        <ul>
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=103">
+							동양란
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=104">
+							서양란
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=101">
+							근조화환
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=102">
+							축하화환
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=105">
+							꽃바구니
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=111">
+							과일바구니
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=107">
+							관엽식물
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=108">
+							공기정화
+						</a>
+					</li>
+				
+			
+				<!-- 화면상 최대 10개까지만 보여주는 설정 -->
+				
+					<li>
+						<a href="/shop/shopproduct/productList?categoryId=109">
+							분재
+						</a>
+					</li>
+				
+			
+        </ul>
+        <ol>
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m01"><a href="/shop/shopproduct/productList?categoryId=201" class="m01">축하/생일&기념일</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m02"><a href="/shop/shopproduct/productList?categoryId=202" class="m02">사랑고백&프로포즈</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m03"><a href="/shop/shopproduct/productList?categoryId=203" class="m03">개업&창업&이전</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m04"><a href="/shop/shopproduct/productList?categoryId=204" class="m04">승진&취업&영전</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m05"><a href="/shop/shopproduct/productList?categoryId=205" class="m05">병문안&돌&출산</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m06"><a href="/shop/shopproduct/productList?categoryId=206" class="m06">행사&결혼&회갑</a></li>
+				
+			
+				<!-- 화면상 최대 7개까지만 보여주는 설정 -->
+				
+					<li class="m07"><a href="/shop/shopproduct/productList?categoryId=207" class="m07">조문&추모&영결</a></li>
+				
+			
+        </ol>
+    </nav>
+</header>
+<!-- ☆☆☆☆☆☆☆☆☆ header e ☆☆☆☆☆☆☆☆☆ -->
+
+<script type="text/javascript">
+
+	<!--
+	
+	var domain;
+	var companyName;
+	
+	$(document).ready(function(){
+	    $.get('/shop/ws/main/footer', {}, function(data){
+
+		    //공지사항이 있을 때 하나만 메인에 보여줌
+		    if(data.noticeList.length > 0) {
+				var str ='<p><a href="/shop/board/'+ data.noticeList[0].boardId +'/noticeBoardDetail/'+ data.noticeList[0].contentId +'">'+ data.noticeList[0].title +'</a></p>';
+		        $('#newstickerlist').html(str);
+			}
+
+		    //도메인 설정
+            domain = 'http://'+data.domain+'/shop';
+            companyName = data.shop.companyName;
+	    });
+	});
+
+   //-->
+</script>
+<!-- ☆☆☆☆☆☆☆☆☆ header e ☆☆☆☆☆☆☆☆☆ -->
+
+
+    <!-- ☆☆☆☆☆☆☆☆☆ header e ☆☆☆☆☆☆☆☆☆ -->
+    
+  		
+    	
+			<section class="memberjoinagree">
+	    	<section class="mypage">
+    	
+    
+    <!-- ☆☆☆☆☆☆☆☆☆ left s ☆☆☆☆☆☆☆☆☆ -->
+		
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>왼쪽메뉴</title>
+</head>
+<body>
+	
+		
+		
+	    	<nav class="csnav">
+				<h1>고객만족센터</h1>
+				<ul>
+					<li class="cc01"><a href="/shop/customerCenter/information" >이용안내</a></li>
+					<li class="cc02"><a href="/shop/board/14/noticeBoardList" >공지사항</a></li>
+					
+					<li class="cc04"><a href="/shop/join/joinInformation" >회원가입</a></li>
+					<li class="cc05"><a href="/shop/board/QnABoardRegister" >고객문의</a></li>
+					<li class="cc06"><a href="/shop/customerCenter/usersAgreement" >이용약관</a></li>
+					<li class="cc07"><a href="/shop/customerCenter/privacyPolicy" >개인정보취급방침</a></li>
+				</ul>
+			 </nav>
+		
+	
+</body>
+</html>
+    <!-- ☆☆☆☆☆☆☆☆☆ left e ☆☆☆☆☆☆☆☆☆ -->
+    <!-- ★★★★★★★★★★★★★★★★★★★ Contents Here s ★★★★★★★★★★★★★★★★★★★ -->
+        <div class="memjoincontent">
+	    <h1 class="conlogin">회원서비스혜택</h1>
+	    <div>
+	        <div class="logleftwrap">
+	            <h3>지금 회원가입하시면 여러가지 혜택을 받으실 수 있습니다.</h3>
+	            <a href="/shop/join/joinInformation">
+	                <img src="/shop/resources/img/btn_join.gif" alt="회원가입하기" />
+	            </a>
+	            <input type="hidden" id="message" name="message" value=""/>
+	        </div>
+	        <div class="logrightwrap">
+	            <form id="customerloginform" name="customerloginform" action="/shop/j_spring_security_check" method="post">
+	                <dl>
+	                    <dt>아이디</dt>
+	                    <dd>
+	                        <input type="text" style="width:160px;" class="txt" name="j_username" id="j_username"/>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>비밀번호</dt>
+	                    <dd>
+	                        <input type="password" style="width:160px;" class="txt"  name="j_password" id="j_password" onKeydown="javascript:if(event.keyCode == 13) loginFormSubmit();"/>
+	                    </dd>
+	                    <dd class="autlogin">
+	                        <label><input type="checkbox" id="ch_save"/> 아이디 저장하기 </label>
+	                    </dd>
+	                </dl>
+	                <div class="btnloginwrap">
+	                    <a href="#" onclick="javascript:loginFormSubmit();">
+	                        <img src="/shop/resources/img/btn_loginblue.gif" alt="로그인" />
+	                    </a>
+	                </div>
+	            </form>
+	            <div class="btnjoinwrap">
+	                <a href="/shop/searchIdPassword/search" class="btnFindID">
+	                    <img src="/shop/resources/img/btn_findidpw.gif" alt="아이디/비밀번호찾기" />
+	                </a>
+	            </div>
+
+	            <div class="logbottomwrap_guestOrder">
+					<form id="guestOrderWrite" action="/shop/shoporder/guestOrderWrite" method="get">
+						<dl>
+						    <dt>주문자</dt>
+						    <dd><input type="text" class="txt" id="guestOrderName" name="guestOrderName" style="width:150px;"/></dd>
+						</dl>
+						<dl>
+						    <dt>휴대전화</dt>
+						    <dd><input type="text" class="txt" id="guestOrderPhoneNo" name="guestOrderPhoneNo" style="width:150px;" onkeyup="inputOnlyNumber(this);" onblur="inputOnlyNumber(this);"/></dd>
+						</dl>
+					    <div class="btnnonmemberwrap">
+					        <img src="/shop/resources/img/btn_nonmemorder.gif" alt="비회원 주문하기" class="cursorp" onclick="javascript:guestOrderWrite();" />
+					    </div>
+					</form>
+			    </div>
+
+	            <div class="logbottomwrap">
+		            <form action="/shop/shoporder/guestOrderCheckDetail" id="guestOrderCheckDetail" method="POST" >
+						<dl>
+						    <dt>주문자</dt>
+						    <dd><input type="text" class="txt" id="orderName" name="shopOrderName" style="width:150px;"/></dd>
+						</dl>
+						<dl>
+						    <dt>주문번호</dt>
+						    <dd><input type="text" class="txt" id="orderNo" name="shopOrderNo" style="width:150px;" /></dd>
+						</dl>
+						<div class="btnnonmembercheckwrap">
+						    <img src="/shop/resources/img/btn_nonmemordercheck.gif" alt="비회원 주문조회" class="cursorp" onclick="javascript:gusetOrderCheckDetail();"/>
+						</div>
+					</form>
+			    </div>
+			</div>
+		</div>
+	    <p class="memberbottom"></p>
+	</div>
+    <script type="text/javascript">
+<!--
+
+$(document).ready(function(){
+    message();
+    // 사용자쿠키를 가져와 포커싱한다.
+    try{
+      var saveId = getCookie("j_username");
+      if(saveId != null && saveId != ""){
+        $("#j_username").val(saveId);
+        $("#ch_save").attr('checked','checked');
+        $("#j_password").focus();
+      }else{
+        $("#j_username").focus();
+      }
+    } catch (e) { }
+});
+
+function message() {
+	if ($("#message").val() != "" && $("#message").val() != null) {
+		alert($("#message").val());
+	}
+}
+
+//결제처리 중 세션이 종료되어 로그인페이지로 왔을 때 처리되는 부분
+if(parent != null && parent.setiframeResult != null) {
+	alert("일정 시간동안 거래가 없어 로그아웃 되었습니다.\n다시 로그인 후 처리가 가능합니다.\n");
+	if(parent.failPayment != null) parent.failPayment();
+	parent.location.replace("/shop/main");
+}
+
+/**
+ * 로그인 아이디, 패스워드 체크
+ */
+function validateLoginInfo(){
+    var loginId = $("#j_username").val();
+    var password = $("#j_password").val();
+
+    if( loginId == '' || loginId.length == 0 ){
+        validateAlert("로그인아이디","로그인아이디를 입력해주세요.");
+        $('#j_username').focus();
+        return ;
+    }
+    $("#j_username").val(loginId);
+    if( password == '' || password.length == 0 ){
+        validateAlert("비밀번호","비밀번호를 입력해주세요.");
+        $('#j_password').focus();
+        return ;
+    }
+    $("#j_password").val(password);
+    return true;
+}
+
+/**
+ * 로그인
+ */
+function loginFormSubmit(){
+    if (!validateLoginInfo()) return ;
+    
+    if( $('#ch_save').is(':checked')) {
+        setCookie("j_username", $.trim($("#j_username").val()), 30);
+	} else {
+        setCookie("j_username", "", -1);
+    }
+    $("#customerloginform").submit();    
+}
+
+/**
+ * 주문자, 주문번호체크
+ */
+function validateGusetOrderCheckDetail(){
+    var orderName = $("#orderName").val();
+    var orderNo = $("#orderNo").val();
+
+    if( orderName == '' || orderName.length == 0 ){
+        validateAlert("주문자명","주문자명을 입력해주세요.");
+        $('#orderName').focus();
+        return ;
+    }
+    if( orderNo == '' || orderNo.length == 0 ){
+        validateAlert("주문번호","주문번호를 입력해주세요.");
+        $('#orderNo').focus();
+        return ;
+    }
+    return true;
+}
+
+/**
+ * 쿠키굽기
+ * @param {string} name
+ * @param {string} value
+ * @param {string} path
+ * @param {string} domain
+ * @param {string} secure
+ */
+function setCookie (name,value,path,domain,secure) {
+    var expires = new Date();
+    expires.setMonth(expires.getMonth() + 1);
+    document.cookie = name
+                    + "="
+                    + escape (value)
+                    + ((expires) ? "; expires=" + expires.toGMTString() : "")
+                    + ((path) ? "; path=" + path : "")
+                    + ((domain) ? "; domain="
+                    + domain : "")
+                    + ((secure) ? "; secure" : "");
+}
+
+//쿠키 생성
+ function setCookie(cName, cValue, cDay){
+     var expire = new Date();
+     expire.setDate(expire.getDate() + cDay);
+     cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+     if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+     document.cookie = cookies;
+ }
+
+ // 쿠키 가져오기
+ function getCookie(cName) {
+     cName = cName + '=';
+     var cookieData = document.cookie;
+     var start = cookieData.indexOf(cName);
+     var cValue = '';
+     if(start != -1){
+         start += cName.length;
+         var end = cookieData.indexOf(';', start);
+         if(end == -1)end = cookieData.length;
+         cValue = cookieData.substring(start, end);
+     }
+     return unescape(cValue);
+ }
+
+/**
+ * 비밀번호 찾기 팝업에서 호출하는 함수
+ */
+function inputLoginId(loginId){
+    $("#j_userId").val(loginId);
+    $("#j_password").focus();
+}
+
+
+/**
+ * 비회원 주문내역 조회
+ */
+function gusetOrderCheckDetail(){
+    if (!validateGusetOrderCheckDetail()) return ;
+    $("#guestOrderCheckDetail").submit();
+}
+
+//팝업에서 선택된 값 받아오는 함수
+function chooseValue(choose) {
+	if(choose != null && choose != undefined){
+		if(choose == 1){
+			location.href="/shop/searchIdPassword/search";
+		} else if(choose == 2){
+	 		$("#guestOrderWrite").submit();
+		}
+	}
+}
+
+
+/**
+* customer 등록여부 체크후 submit
+*/
+
+function guestOrderWrite(){
+
+    if (!validateGuestOrderWrite()) return ;
+
+    var customerName = $.trim($("#guestOrderName").val());
+    $("#guestOrderName").val(customerName);
+    var cellPhoneNo = $.trim($("#guestOrderPhoneNo").val());
+    $("#guestOrderPhoneNo").val(cellPhoneNo);
+
+    $.ajax({
+    	url: "/shop/ws/shoporder/joinCheck",
+        type: "get",
+        dataType: "json",
+        timeout: 60000,
+        data: {customerName : customerName, cellPhoneNo : cellPhoneNo},
+        success: function(data){
+      	if(data.joinedYn){
+   			winPopup('/shop/popup/chooseGuestOrder', 'choosPopUp', 550, 250, 1, 0);
+       	}else {
+		    $("#guestOrderWrite").submit();
+        }
+      },
+      error: function (xhr, ajaxOptions, thrownError){
+    	  checkRecommendShopAdminIdYn = false;
+          validateAlert('서버장애','서버와의 통신 중 장애가 발생하였습니다.','동일한 현상이 반복발생시 고객센터로 문의해주세요.');
+      }
+    });
+}
+
+/**
+ * 비회원 주문 체크
+ */
+function validateGuestOrderWrite(){
+	var orderName = $("#guestOrderName").val();
+    var orderPhoneNo = $("#guestOrderPhoneNo").val();
+
+    if(orderName == '' || orderName.length == 0 ){
+        validateAlert("주문자명","주문하실분의 이름을 입력해주세요.");
+        $('#guestOrderName').focus();
+        return;
+    }
+    if(orderPhoneNo == '' || orderPhoneNo.length == 0 ){
+        validateAlert("주문자 휴대전화","주문하실분의 휴대전화번호를 입력해주세요.");
+        $('#guestOrderPhoneNo').focus();
+        return ;
+    }
+    if(orderPhoneNo.length < 8 || orderPhoneNo.search(/^[\d]+[\d\-]+[\d]$/) == -1){
+        validateAlert('주문자 휴대전화','주문하실분의 휴대전화번호를 정확하게 입력해주세요.');
+        $("#guestOrderPhoneNo").focus();
+        return;
+    }
+    return true; 
+}
+
+//-->
+</script>   
+	    
+	  		
+	    	
+		    	</section>
+		    	</section>
+	    	
+	    
+    <!-- ★★★★★★★★★★★★★★★★★★★ Contents Here e ★★★★★★★★★★★★★★★★★★★ -->
+
+   <!-- footer s-->
+   
+
+
+
+
+
+
+
+        <!-- ☆☆☆☆☆☆☆☆☆ slider Menu s ☆☆☆☆☆☆☆☆☆ -->
+        <aside class="quickmenu" id="quickMenu">
+            <h3>행복한 쇼핑! 즐거운 쇼핑!</h3>
+            <input type="hidden" id="companyName" />
+     		<input type="hidden" id="domain" />
+            <nav>
+                <ul>
+                    <li class="qm01"><a href="javascript:;" id="homePage" onclick="javascript:startPage(this);" >시작페이지등록</a></li>
+                    <li class="qm02"><a href="javascript:;" id="favorite" onclick="javascript:createBookmarkLink();" >즐겨찾기추가</a></li>
+                    <li class="qm03"><a href="/shop/board/QnABoardRegister">1:1고객문의</a></li>
+                    <li class="qm04"><a href="/shop/customerCenter/tip/tipRecommendMsg">추천경조사어</a></li>
+                    <li class="qm05"><a href="#" onclick="winPopup('https://consumer.tosspayments.com/payment-history/card','영수증출력',840,700,1,0);">영수증출력</a></li>
+                </ul>
+            </nav>
+			<div id="bizShopLink"></div>
+            <div class="sliderDeliveryimg">
+            	<a href="/shop/board/deliveryimageroom/deliveryImageRoomList"><img src="/shop/resources/img/quickMenu_s1.jpg" alt="배송사진서비스" /></a>
+			</div>
+            <a href="#"><img src="/shop/resources/img/iconTop.gif" alt="top" style="margin-left:45px;" /></a>
+        </aside>
+        <script type="text/javascript">initializequick('quickMenu','1010','85');</script>
+        <!-- ☆☆☆☆☆☆☆☆☆ slider Menu e ☆☆☆☆☆☆☆☆☆ -->
+
+       <!-- footer s-->
+       <footer class="mainFooter">
+        <ul>
+            <li class="fm01">
+                <h2>무엇을 도와드릴까요?</h2>
+                <h3>고객 여러분을 위해 최선을 다하겠습니다.</h3>
+                <h4>사이트 이용중 궁금하신 점이나 요청사항이 있으시면, 언제든지 문의해 주십시오.</h4>
+                <input type="hidden" id="tel" />
+	            <span id="callCenterNo"></span>
+            </li>
+            <li class="fm02">
+                <h3><a href="/shop/customerCenter/tip/tipCallCenter">전화주문 안내</a></h3>
+                <h4>배송시간, 장소, 추천상품에 대해 전화상담과 주문을 받고 있습니다.</h4>
+            </li>
+            <li class="fm03">
+                <h3><a href="/shop/customerCenter/tip/tipCreditCard">신용카드결제 안내</a></h3>
+                <h4>알기쉬운 신용카드 결제 완벽가이드!!</h4>
+            </li>
+            <li class="fm04">
+                <h3><a href="/shop/customerCenter/tip/tipDelivery">주문/배송/환불 안내</a></h3>
+                <h4>주문배송 및 환불에 대한 궁금증을 속 시원하게 풀어드립니다.</h4>
+            </li>
+        </ul>
+        <!-- 무통장 계좌번호 -->
+        <div id ="accountNum" class="accNum"></div>
+        <div id ="bottomSetting" style="width: 1000px;">
+        </div>
+        <nav>
+            <h3>이용안내</h3>
+            <ul>
+                <li class="first"><a href='/shop/customerCenter/information'>고객센터</a></li>
+                <li><a href="/shop/customerCenter/usersAgreement">이용약관</a></li>
+                <li><a href="/shop/customerCenter/privacyPolicy">개인정보보호방침</a></li>
+                <li><a href="javascript:emailPop();">이메일무단수집거부</a></li>
+                <li><a href="/shop/adminLogin" >관리자</a></li>
+            </ul>
+        </nav>
+        <section class="fotsec">
+            <div class="fs01">
+                <p id="article"></p>
+                <address id="companyInfo" >
+                </address>
+            </div>
+            <div class="fs02">
+                <div class="fs0201">
+                    <h3>공정거래위원회</h3>
+                </div>
+                <div class="fs0202">
+                    <h3>
+		                <div id="footerLogoImage"></div>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+<script type="text/javascript">
+	   	
+	var domain="";
+	var companyName="";
+	var article="";
+
+   	$(document).ready(function(){
+        $(".sliderDeliveryimg").hide();
+        
+   	    $.get('/shop/ws/main/footer', {}, function(data){
+            if(data.shop.mallSetting.deliveryImageRoomYn){
+	            $(".sliderDeliveryimg").show();
+	        }
+
+			//타이틀 설정
+			document.title = data.shopTitle;
+
+			//통신판매신고번호 설정
+			var eCommerceRegNo='';
+			if(data.shop.mallSetting.eCommerceRegNo != null && data.shop.mallSetting.eCommerceRegNo !=""){
+				eCommerceRegNo = '통신판매업신고번호 : '+data.shop.mallSetting.eCommerceRegNo;
+			}
+			
+			//담당자 설정
+			var salesPartnerName='';
+			if (data.salesPartnerName != ''){
+				salesPartnerName = '(담당자 : '+data.salesPartnerName+')';
+			}
+            
+   	    	article = '<p>사전 서면 승인없이 본 사이트의정보, 컨텐츠 및 UI등을 상업적인 목적, 전재, 전송, 스크래핑 등 무단 이용할 수 없습니다.<br />';
+   	    	article += data.shop.companyName;
+   	    	article += '는 공정거래위원회에서 인증한 표준약관을 사용합니다. | 공정거래위원회 승인 제 10023호</p>';
+	
+			$("#article").html(article);
+
+	     	$("#tel").val(data.callCenterNo);
+			telImgTrans();
+
+	     	str ='<p>ⓒ<strong>'+data.shop.companyName+'</strong>' +
+	     		' 대표: '+data.shop.representName+' | ' +
+	            '사업자번호 : '+ data.shop.businessNo + ' | ' +
+	            eCommerceRegNo +
+            	'<br/>' +
+	            '대표전화 : '+data.shop.representPhoneNo+'  | 팩스 : '+data.shop.faxNo+' | ' +
+	            'e-mail : '+data.shop.representEmail+ ' | ' +
+	            '사업소재지 : '+data.shop.address.streetAddress+' '+data.shop.address.detailAddress+' <strong>'+salesPartnerName+'</strong></p>';
+            
+	     	$('#companyInfo').html(str);
+
+			var accountNum="";
+			if(data.shop.accounts.length > 0){
+				var accountCheckCount = 0;		//최초 계좌번호 하나만 체크하기위한 변수
+				for(var i=0; i<data.shop.accounts.length; i++){
+					if (data.shop.accounts[i].accountType.code == '02'){
+						if(accountCheckCount == 0){
+							accountNum='<p>무통장 계좌번호 안내</p><table border="0" cellspacing="0" cellpadding="0">';
+						}
+						accountCheckCount++;
+						//홀수번째면 </tr>짝수번째면 뒤에 </tr>
+						if((accountCheckCount % 2) == 1){
+							if ((data.shop.accounts.length - 1) == i ){
+								accountNum += '<tr><th><span>'+data.shop.accounts[i].accountNo+'</span></th><td align="left" colspan="3"><strong style="color: #a9a9a9; font-size:12px;">'+data.shop.accounts[i].firmCode.name+'</strong> <strong style="color:#5f5f5f; font-size:12px;">'+data.shop.accounts[i].depositorName+'</strong></td></tr>';
+							} else {
+								accountNum += '<tr><th><span>'+data.shop.accounts[i].accountNo+'</span></th><td align="left" width="300px"><strong style="color: #a9a9a9; font-size:12px;">'+data.shop.accounts[i].firmCode.name+'</strong> <strong style="color:#5f5f5f; font-size:12px;">'+data.shop.accounts[i].depositorName+'</strong></td>';
+							}
+						} else {
+							accountNum += '<th><span>'+data.shop.accounts[i].accountNo+'</span></th><td align="left" width="300px"><strong style="color: #a9a9a9; font-size:12px;">'+data.shop.accounts[i].firmCode.name+'</strong> <strong style="color:#5f5f5f; font-size:12px;">'+data.shop.accounts[i].depositorName+'</strong></td></tr>';
+						}
+						
+					}
+				}
+				if(accountCheckCount > 0){
+					accountNum +='</table>';
+				}
+		     	$('#accountNum').html(accountNum);
+			}
+						
+			var logo="";
+			if(data.shop.mallSetting.footerLogoImage != null && data.shop.mallSetting.footerLogoImage != ""){
+	     		logo = '<img src="https://resource.flowerteam.kr/images/' + data.shop.mallSetting.footerLogoImage + '" alt="footerlogo" width="134px" height="45px" />';
+			} else {
+            	logo = '<img src="/shop/resources/img/default_footerlogo.gif" alt="footerlogo" width="134px" height="45px" />';
+			}
+	     	$("#footerLogoImage").html(logo);
+
+	     	var bottomSetting="";
+			if(data.shop.mallSetting.bottomSetting != null && data.shop.mallSetting.bottomSetting != ""){
+		     	$('#bottomSetting').html(data.shop.mallSetting.bottomSetting +"<br />");
+			}
+	     	
+	     	//도메인 설정
+            domain = 'http://'+data.domain+'/shop';
+            companyName = data.shop.companyName;
+
+			//기업형 링크 설정 
+            if(data.shop.bizMallServicesYn){
+            	$("#bizShopLink").html('<a href="http://'+data.domain+'/bizshop"><img src="/shop/resources/img/quick_banner.gif" alt="기업고객용쇼핑몰" target="_blank"/></a>');
+			}
+   	    });
+   	});
+
+   	function startPage(obj) {
+   		if (document.all && window.external){
+   			obj.style.behavior='url(#default#homepage)';
+   			obj.setHomePage(domain);
+   	    }
+   	}
+
+   	/**
+   	* 즐겨찾기 등록하기
+   	*/
+   	function createBookmarkLink() {
+   	    url = domain;
+   	    title = companyName;
+   	    //FF
+   	    if (window.sidebar) {
+   	        window.sidebar.addPanel(title, url,"");
+   	    }
+		// Google Chrome
+		else if(window.chrome){
+		   alert("Ctrl+D키를 누르시면 즐겨찾기에 추가하실 수 있습니다.");
+		}
+   	    //IE
+   	    else if(window.external) {
+   	        window.external.AddFavorite(url, title);
+   	    }
+   	    //Opera
+		else if(window.opera && window.print) {
+			var elem = document.createElement('a'); 
+			elem.setAttribute('href',url); 
+			elem.setAttribute('title',title); 
+			elem.setAttribute('rel','sidebar'); 
+			elem.click();
+   	        return true;
+   	    } 	    
+   	}	
+   	
+	/*
+	 *  숫자를 이미지로 바꾼다.
+	 */
+	function telImgTrans(){
+	    var str = $("#tel").val();
+	    var imgDir = "/shop/resources/img/";
+	    var tmpStr = str;
+	    var splitTelNo = str.split("-");
+	    var len = str.length;
+	    var imgPathStr;
+	    var htmlStr = "";
+	    for (var i=0; i<splitTelNo.length; i++) {
+	        splitStr = splitTelNo[i];
+	        for (var j=0; j<splitStr.length; j++) {
+	            tmpStr = splitStr.charAt(j);
+	            
+	            if (i == 0) {
+	                imgPathStr = "<img src='"+ imgDir + "bluenum0"+ tmpStr + ".gif' border='0' alt='"+tmpStr+"' /> ";
+	            } else if (i == 1) {
+	                imgPathStr = "<img src='"+ imgDir + "greennum0"+ tmpStr + ".gif' border='0' alt='"+tmpStr+"' /> ";
+	            } else {
+	                imgPathStr = "<img src='"+ imgDir + "rednum0"+ tmpStr + ".gif' border='0' alt='"+tmpStr+"' /> ";
+	            }
+	            
+	            htmlStr += imgPathStr;
+	        }
+	        
+	        if (i != splitTelNo.length-1) {
+	            imgPathStr = "<img src='"+ imgDir + "icon_numdash.gif' border='0' alt='-' /> ";
+	            htmlStr += imgPathStr;
+	        }
+	    } 
+	    $("#callCenterNo").html(htmlStr);
+	    $("#telephone").html(htmlStr);
+	}
+
+	/**
+     * 이메일 무단 수집 거부 팝업
+     */
+    function emailPop() {
+    	winPopup('/shop/customerCenter/email/pop', 'emailPop', 415, 198);
+	}
+
+</script>
+<!-- footer e-->
+
+   <!-- footer e-->
+   </div>
+   
+</body>
+</html>

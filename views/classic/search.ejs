@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+    <section class="subvisual01">
+        <h1 style="padding:18px 0; font-size:20px; color:#333;">상품검색</h1>
+    </section>
+
+    <section class="subItemlist">
+        <h1>
+            <% if (q) { %>'<strong style="color:#1a6dcc;"><%= q %></strong>' 검색결과 (<%= products.length %>)<% } else { %>검색어를 입력해 주세요<% } %>
+        </h1>
+        <div class="largelist4">
+            <% if (!q) { %>
+                <p style="padding:60px 0; text-align:center; color:#999;">상단 검색창에 상품명을 입력하세요.</p>
+            <% } else if (products.length === 0) { %>
+                <p style="padding:60px 0; text-align:center; color:#999;">'<%= q %>'에 대한 검색결과가 없습니다.</p>
+            <% } else { %>
+                <% products.forEach((p) => { %>
+                    <%- include('partials/item', { p }) %>
+                <% }) %>
+            <% } %>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>

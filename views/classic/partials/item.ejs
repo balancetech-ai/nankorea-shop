@@ -1,0 +1,9 @@
+<dl>
+    <dt class="pimg">
+        <a href="<%= base %>/product/<%= p.productId %>">
+            <img src="<%= imgProd(p.images && p.images.medium) %>" alt="<%= p.name %>" class="goodsimg" onerror="this.src='/shop/resources/img/noimage_240.gif';">
+        </a>
+    </dt>
+    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+    <dd><%= Number(p.price || 0).toLocaleString('ko-KR') %> 원</dd>
+</dl>

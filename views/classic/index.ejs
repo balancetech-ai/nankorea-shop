@@ -1,0 +1,135 @@
+<%- include('partials/header') %>
+
+    <!-- ☆☆☆ event ☆☆☆ -->
+    <div class="main_evnet_area">
+        <h1>고객님을 위한 특별한 혜택</h1>
+        <div class="mainkeyvisual">
+            <div id="slides" class="hori_visual">
+                <ul class="slides_container ulcarousel">
+                    <% ['20240826/163105727.jpg','20240826/163121721.jpg','20240826/163218820.jpg','20240826/163325614.jpg'].forEach((ev, i) => { %>
+                        <li>
+                            <a href="<%= base %>/category/<%= navCategories[i % navCategories.length].id %>">
+                                <img src="<%= imgEvent(ev) %>" width="600px" height="334px" alt="한국난원" />
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+                <div class="leftslide prev"><a href="javascript:;">이전</a></div>
+                <div class="rightslide next"><a href="javascript:;">다음</a></div>
+            </div>
+        </div>
+        <ul class="aside">
+            <li class="mev_at">
+                <a href="#"><img src="<%= imgShop('mainLargeBanner_20240826164720806.png') %>" alt="이벤트1" style="width:325px; height:214px;" /></a>
+            </li>
+            <li class="mev_ab">
+                <a href="#"><img src="<%= imgShop('mainSmallBanner_2024082315200845.png') %>" alt="이벤트2" style="width:325px; height:114px;" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ☆☆☆ 추천상품 ☆☆☆ -->
+    <div id="inc_recommended_area">
+    <section class="mainItemlist">
+        <h1 class="disnone">고객님을 위한 특별 추천상품</h1>
+        <nav>
+            <ul>
+                <% ['동양란','서양란','근조화환','축하화환','꽃바구니','관엽식물'].forEach((t, i) => { %>
+                    <li class="ps0<%= i %>"><a href="#" class="<%= i === 0 ? 'selected' : '' %>"><%= t %></a></li>
+                <% }) %>
+            </ul>
+        </nav>
+
+        <% const rec = featured; %>
+        <% rec.slice(0, 2).forEach((p, i) => { %>
+            <div class="largePd">
+                <dl class="large_<%= i %>">
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.medium) %>" width="240px" height="240px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_240.gif';"/></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dd><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dd>
+                </dl>
+            </div>
+        <% }) %>
+        <div class="smallPd">
+            <% rec.slice(2, 4).forEach((p, i) => { %>
+                <dl class="small_<%= i + 2 %>">
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.small || p.images && p.images.medium) %>" width="120px" height="120px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_120.gif';"/></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dd><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dd>
+                    <dd class="sale"></dd>
+                    <dd class="point"></dd>
+                </dl>
+            <% }) %>
+        </div>
+        <span class="spgoods">
+            <img src="/shop/resources/img/typecategory_01bg.gif" alt="정성이 담긴 고품격 상품들로 준비하였습니다."/>
+        </span>
+    </section>
+    </div>
+
+    <!-- ☆☆☆ 베스트상품 ☆☆☆ -->
+    <section class="bestItemlist">
+        <h1 class="banner01">고객님을 위한 베스트상품</h1>
+        <% best.slice(0, 2).forEach((p, i) => { %>
+            <div class="largepd2">
+                <h2 class="pd<%= i + 1 %>">베스트 <%= i + 1 %>위</h2>
+                <dl>
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.medium) %>" width="240px" height="240px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_240.gif';" /></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dd><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dd>
+                    <dd class="sale"></dd>
+                    <dd class="point"></dd>
+                </dl>
+            </div>
+        <% }) %>
+        <div class="smallpd4">
+            <% best.slice(2, 6).forEach((p) => { %>
+                <dl>
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.small || p.images && p.images.medium) %>" width="120px" height="120px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_120.gif';"/></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dt><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dt>
+                </dl>
+            <% }) %>
+        </div>
+    </section>
+
+    <!-- ☆☆☆ 명품상품 ☆☆☆ -->
+    <section class="bestItemlist">
+        <h1 class="banner02">고객님을 위한 명품상품</h1>
+        <% luxury.slice(0, 2).forEach((p, i) => { %>
+            <div class="largepd2">
+                <h2 class="pdgood0<%= i + 1 %>">명품 <%= i + 1 %>위</h2>
+                <dl>
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.medium) %>" width="240px" height="240px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_240.gif';" /></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dd><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dd>
+                    <dd class="sale"></dd>
+                    <dd class="point"></dd>
+                </dl>
+            </div>
+        <% }) %>
+        <div class="smallpd4">
+            <% luxury.slice(2, 6).forEach((p) => { %>
+                <dl>
+                    <dt><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.small || p.images && p.images.medium) %>" width="120px" height="120px" alt="<%= p.name %>" onerror="this.src='/shop/resources/img/noimage_120.gif';"/></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dt><img src="/shop/resources/img/iconPrice.gif" alt="정상가격" /> <%= fmtPrice(p.price) %></dt>
+                </dl>
+            <% }) %>
+        </div>
+    </section>
+
+<script type="text/javascript">
+// 슬라이더 미니 동작 (원본 script.js 의존 없이 첫 슬라이드만 노출 후 5초 회전)
+(function(){
+    var $li = window.jQuery && jQuery('.slides_container > li');
+    if (!$li || !$li.length) return;
+    $li.hide().eq(0).show();
+    var idx = 0;
+    setInterval(function(){ idx = (idx + 1) % $li.length; $li.fadeOut(300); $li.eq(idx).fadeIn(300); }, 5000);
+    jQuery('.rightslide').on('click', function(){ idx=(idx+1)%$li.length; $li.hide(); $li.eq(idx).show(); });
+    jQuery('.leftslide').on('click', function(){ idx=(idx-1+$li.length)%$li.length; $li.hide(); $li.eq(idx).show(); });
+})();
+</script>
+
+<%- include('partials/footer') %>

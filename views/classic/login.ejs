@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+
+    <!-- ★ Contents ★ -->
+    <div class="memjoincontent">
+        <h1 class="conlogin">회원서비스혜택</h1>
+        <div>
+            <div class="logleftwrap">
+                <h3>지금 회원가입하시면 여러가지 혜택을 받으실 수 있습니다.</h3>
+                <a href="#"><img src="/shop/resources/img/btn_join.gif" alt="회원가입하기" /></a>
+            </div>
+            <div class="logrightwrap">
+                <form id="customerloginform" name="customerloginform" action="#" method="post" onsubmit="alert('실제 로그인은 블루마 DB 연동(3단계)에서 활성화됩니다.'); return false;">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd><input type="text" style="width:160px;" class="txt" name="j_username" id="j_username"/></dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" style="width:160px;" class="txt" name="j_password" id="j_password"/></dd>
+                        <dd class="autlogin"><label><input type="checkbox" id="ch_save"/> 아이디 저장하기 </label></dd>
+                    </dl>
+                    <div class="btnloginwrap">
+                        <a href="#" onclick="document.getElementById('customerloginform').requestSubmit ? document.getElementById('customerloginform').requestSubmit() : document.getElementById('customerloginform').submit(); return false;">
+                            <img src="/shop/resources/img/btn_loginblue.gif" alt="로그인" />
+                        </a>
+                    </div>
+                </form>
+                <div class="btnjoinwrap">
+                    <a href="#" class="btnFindID"><img src="/shop/resources/img/btn_findidpw.gif" alt="아이디/비밀번호찾기" /></a>
+                </div>
+
+                <div class="logbottomwrap_guestOrder">
+                    <form action="#" method="get" onsubmit="alert('비회원 주문은 3단계에서 활성화됩니다.'); return false;">
+                        <dl><dt>주문자</dt><dd><input type="text" class="txt" style="width:150px;"/></dd></dl>
+                        <dl><dt>휴대전화</dt><dd><input type="text" class="txt" style="width:150px;"/></dd></dl>
+                        <div class="btnnonmemberwrap">
+                            <img src="/shop/resources/img/btn_nonmemorder.gif" alt="비회원 주문하기" class="cursorp" onclick="this.form.requestSubmit ? this.form.requestSubmit() : this.form.submit();" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="logbottomwrap">
+                    <form action="#" method="post" onsubmit="alert('주문조회는 3단계에서 활성화됩니다.'); return false;">
+                        <dl><dt>주문자</dt><dd><input type="text" class="txt" style="width:150px;"/></dd></dl>
+                        <dl><dt>주문번호</dt><dd><input type="text" class="txt" style="width:150px;"/></dd></dl>
+                        <div class="btnnonmembercheckwrap">
+                            <img src="/shop/resources/img/btn_nonmemordercheck.gif" alt="비회원 주문조회" class="cursorp" onclick="this.form.requestSubmit ? this.form.requestSubmit() : this.form.submit();"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="memberbottom"></p>
+    </div>
+    <!-- ★ Contents e ★ -->
+
+<%- include('partials/footer') %>

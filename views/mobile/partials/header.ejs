@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title><%= title %> | 한국난원</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="/css/mobile.css">
+</head>
+<body>
+<div class="wrap">
+
+    <input type="checkbox" id="m-menu-toggle">
+
+    <!-- 오프캔버스 메뉴 -->
+    <nav class="m-drawer">
+        <label for="m-menu-toggle" class="close">&times;</label>
+        <h2>전체 카테고리</h2>
+        <div class="grp">상품분류</div>
+        <ul>
+            <% navCategories.forEach((c) => { %>
+                <li><a href="<%= base %>/category/<%= c.id %>"><%= c.name %> <span style="color:#bbb;font-size:12px;">(<%= c.count %>)</span></a></li>
+            <% }) %>
+        </ul>
+        <div class="grp">용도별</div>
+        <ul>
+            <% usageCategories.forEach((c) => { %>
+                <li><a href="<%= base %>/category/<%= c.id %>"><%= c.name %></a></li>
+            <% }) %>
+        </ul>
+        <div class="grp">회원</div>
+        <ul>
+            <li><a href="<%= base %>/login">로그인 / 회원가입</a></li>
+            <li><a href="<%= base %>/login">주문조회</a></li>
+        </ul>
+    </nav>
+    <label for="m-menu-toggle" class="m-overlay"></label>
+
+    <!-- 헤더 -->
+    <header class="m-header">
+        <label for="m-menu-toggle" class="menu-btn"><i class="fa-solid fa-bars"></i></label>
+        <a href="<%= base %>/" class="logo">한국난원<small>KOREA NANWON</small></a>
+        <a href="<%= base %>/login" class="home-btn" style="text-align:center;"><i class="fa-regular fa-user"></i></a>
+    </header>
+
+    <!-- 검색 -->
+    <div class="m-search">
+        <form action="<%= base %>/search" method="get">
+            <input type="text" name="productName" placeholder="상품명 검색" value="<%= typeof q !== 'undefined' ? q : '' %>">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>

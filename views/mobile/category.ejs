@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+    <div class="m-cats">
+        <% navCategories.forEach((c) => { %>
+            <a href="<%= base %>/category/<%= c.id %>" class="<%= currentCategory === c.id ? 'on' : '' %>"><%= c.name %></a>
+        <% }) %>
+        <% usageCategories.forEach((c) => { %>
+            <a href="<%= base %>/category/<%= c.id %>" class="<%= currentCategory === c.id ? 'on' : '' %>"><%= c.name %></a>
+        <% }) %>
+    </div>
+
+    <div class="m-listhead">
+        <h1><%= category.name %> <em><%= products.length %></em></h1>
+    </div>
+
+    <div class="m-sort">
+        <a href="<%= base %>/category/<%= category.id %>" class="<%= !sort ? 'on' : '' %>">기본</a>
+        <a href="<%= base %>/category/<%= category.id %>?sort=name" class="<%= sort === 'name' ? 'on' : '' %>">이름순</a>
+        <a href="<%= base %>/category/<%= category.id %>?sort=low" class="<%= sort === 'low' ? 'on' : '' %>">낮은가격</a>
+        <a href="<%= base %>/category/<%= category.id %>?sort=high" class="<%= sort === 'high' ? 'on' : '' %>">높은가격</a>
+    </div>
+
+    <% if (products.length === 0) { %>
+        <p class="m-empty">해당 조건의 상품이 없습니다.</p>
+    <% } else { %>
+        <div class="m-grid">
+            <% products.forEach((p) => { %><%- include('partials/card', { p }) %><% }) %>
+        </div>
+    <% } %>
+
+<%- include('partials/footer') %>

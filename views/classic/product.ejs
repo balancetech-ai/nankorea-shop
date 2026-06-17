@@ -1,0 +1,137 @@
+<%- include('partials/header') %>
+
+    <!-- ★ Contents ★ -->
+    <section class="goodsinfo">
+        <form action="#" method="post" id="orderForm" onsubmit="return false;">
+            <h1>상품 가격정보</h1>
+            <dl>
+                <dt><img src="<%= imgProd(product.images && (product.images.medium || product.images.large)) %>" alt="<%= product.name %>" onerror="this.src='/shop/resources/img/noimage_240.gif';" width="240px" height="240px" /></dt>
+                <dd><img class="gview" src="/shop/resources/img/btn_detailView.gif" alt="크게보기"/></dd>
+            </dl>
+
+            <div class="detail01">
+                <div class="produtName">
+                    <h2><%= product.name %> </h2>
+                    <h3>| <%= cat ? cat.name : '상품' %></h3>
+                </div>
+                <div class="prbar"></div>
+
+                <table class="viewtable">
+                    <colgroup><col width="30px"/><col width="50px"/><col width="*"/></colgroup>
+                    <thead>
+                        <tr>
+                            <th class="tt01"><img src="/shop/resources/img/tt01.gif" alt="선택" /></th>
+                            <th></th>
+                            <th class="tt02"><img src="/shop/resources/img/tt02.gif" alt="판매가격" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% const opts = (product.options && product.options.length) ? product.options : [{ price: product.price }]; %>
+                        <% opts.forEach((o, i) => { %>
+                            <tr>
+                                <td class="center"><input type="radio" class="productPrice" name="rd_productPrice" value="<%= i %>" data-price="<%= Number(o.salePrice || o.price || 0) %>" <%= i === 0 ? 'checked="checked"' : '' %> /></td>
+                                <td></td>
+                                <td class="goodsprice nonsale"><strong class="nonsale"><%= Number(o.salePrice || o.price || 0).toLocaleString('ko-KR') %></strong> 원</td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+
+                <ul>
+                    <li class="na001">
+                        <span class="na01">주문수량</span>
+                        <select id="txt_orderQuantity" name="orderQuantity">
+                            <% for (let q = 1; q <= 10; q++) { %><option value="<%= q %>"><%= q %> </option><% } %>
+                        </select> 개
+                    </li>
+                    <li class="na002">
+                        <span class="na02">실구매액</span>
+                        <strong><span id="totalAmt"><%= Number(product.price || 0).toLocaleString('ko-KR') %></span></strong>원
+                    </li>
+                </ul>
+
+                <div class="prbar"></div>
+                <ul class="goodsorder">
+                    <li><a href="#" onclick="alert('주문/결제는 3단계(DB 연동)에서 활성화됩니다.'); return false;"><img src="/shop/resources/img/btn_order.gif" alt="상품주문하기" /></a></li>
+                    <li><a href="#" onclick="alert('장바구니는 3단계(DB 연동)에서 활성화됩니다.'); return false;"><img src="/shop/resources/img/btn_cart.gif" alt="장바구니담기" /></a></li>
+                    <li><a href="<%= base %>/category/<%= cat ? cat.id : navCategories[0].id %>"><img src="/shop/resources/img/btn_shopping.gif" alt="쇼핑계속하기" /></a></li>
+                </ul>
+            </div>
+            <div class="visual"></div>
+        </form>
+    </section>
+
+    <script>
+    (function () {
+        var qtySel = document.getElementById('txt_orderQuantity');
+        var totalEl = document.getElementById('totalAmt');
+        if (!qtySel || !totalEl) return;
+        var radios = document.querySelectorAll('input.productPrice');
+
+        function selectedPrice() {
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) return Number(radios[i].getAttribute('data-price')) || 0;
+            }
+            return 0;
+        }
+        function recalc() {
+            var qty = parseInt(qtySel.value, 10) || 1;
+            var total = selectedPrice() * qty;
+            totalEl.textContent = total.toLocaleString('ko-KR');
+        }
+
+        qtySel.addEventListener('change', recalc);
+        for (var i = 0; i < radios.length; i++) radios[i].addEventListener('change', recalc);
+        recalc();
+    })();
+    </script>
+
+    <div style="text-align:center;">
+        <br/>
+        <a href="#"><img src="<%= imgShop('productDetailBanner_20240823152537573.png') %>" alt="상품상세배너" style="width:1000px; height:103px;" /></a>
+        <br/>
+    </div>
+
+    <div class="goods_cnts">
+        <div class="goodsinfowrapper">
+            <div class="goodsview">
+                <h1 class="viewtitle01"><a class="tit" name="viewinfo">상품상세정보</a></h1>
+                <div class="goods_detail_area">
+                    <% const big = imgProd(product.images && (product.images.large || product.images.medium)); %>
+                    <% if (big) { %><img src="<%= big %>" height="500" width="500" class="mt10" alt="<%= product.name %>" /><% } %>
+                    <% if (product.description) { %><div class="goods_desc"><%- product.description %></div><% } %>
+                    <% ((product.images && product.images.desc) || []).forEach((f) => { %>
+                        <img src="<%= imgProdDesc(f) %>" class="mt10" alt="상세이미지" />
+                    <% }) %>
+                </div>
+            </div>
+
+            <div class="goodsview">
+                <h1 class="viewtitle02"><a class="tit" name="shipinfo">주문/배송/환불안내</a></h1>
+                <div class="goods_detail_area">
+                    <img alt="주문배송환불안내" src="/shop/resources/img/default_orderinfo.gif">
+                </div>
+            </div>
+        </div>
+
+        <% const rel = related || []; %>
+        <% if (rel.length) { %>
+        <div class="linkgoods">
+            <section>
+                <h1>연관상품안내</h1>
+                <div class="smallPd3">
+                    <% rel.forEach((rp) => { %>
+                        <dl>
+                            <dt><a href="<%= base %>/product/<%= rp.productId %>"><img src="<%= imgProd(rp.images && (rp.images.small || rp.images.medium)) %>" alt="<%= rp.name %>" class="goodsimg" onerror="this.src='/shop/resources/img/noimage_120.gif';"></a></dt>
+                            <dd class="pname"><a href="<%= base %>/product/<%= rp.productId %>"><%= rp.name %></a></dd>
+                            <dd><%= Number(rp.price || 0).toLocaleString('ko-KR') %> 원</dd>
+                        </dl>
+                    <% }) %>
+                </div>
+            </section>
+        </div>
+        <% } %>
+    </div>
+    <!-- ★ Contents e ★ -->
+
+<%- include('partials/footer') %>

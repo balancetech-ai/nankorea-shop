@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+
+    <!-- ★ Contents ★ -->
+    <section class="subvisual01">
+        <div>
+            <img src="<%= imgCategory(category.id) %>" alt="<%= category.name %>" onerror="this.style.display='none';">
+        </div>
+    </section>
+
+    <% if (products.length > 0) { %>
+    <!-- 베스트상품 -->
+    <section class="subbestItem">
+        <h1>베스트상품</h1>
+        <div class="largepd4">
+            <% products.slice(0, 4).forEach((p, i) => { %>
+                <h2 class="pd<%= i + 1 %>">베스트 <%= i + 1 %>위</h2>
+                <dl>
+                    <dt class="pimg"><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.medium) %>" alt="<%= p.name %>" class="goodsimg" onerror="this.src='/shop/resources/img/noimage_240.gif';"></a></dt>
+                    <dd class="pname"><a href="<%= base %>/product/<%= p.productId %>"><%= p.name %></a></dd>
+                    <dd><%= Number(p.price || 0).toLocaleString('ko-KR') %> 원</dd>
+                </dl>
+            <% }) %>
+        </div>
+    </section>
+    <% } %>
+
+    <!-- 정렬바 -->
+    <section class="suborderbar">
+        <nav>
+            <h3>전체상품 조건별 정렬</h3>
+            <ul>
+                <li><a href="<%= base %>/category/<%= category.id %>">전체보기</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?max=100000">~100,000원</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?min=100001&max=200000">~200,000원</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?min=200001&max=300000">~300,000원</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?min=300001&max=400000">~400,000원</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?min=400001&max=500000">~500,000원</a></li>
+                <li><a href="<%= base %>/category/<%= category.id %>?min=500001">~600,000원</a></li>
+                <li class="imgorder01"><a href="<%= base %>/category/<%= category.id %>?sort=name" class="productName">상품이름순</a></li>
+                <li class="imgorder02"><a href="<%= base %>/category/<%= category.id %>?sort=low" class="cheap">낮은가격순</a></li>
+                <li class="imgorder03"><a href="<%= base %>/category/<%= category.id %>?sort=high" class="expensive">높은가격순</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- 전체상품 -->
+    <section class="subItemlist">
+        <h1>전체상품 리스트</h1>
+        <div class="largelist4">
+            <% if (products.length === 0) { %>
+                <p style="padding:60px 0; text-align:center; color:#999; font-weight:normal; width:1000px;">해당 조건의 상품이 없습니다.</p>
+            <% } else { %>
+                <% products.forEach((p) => { %>
+                    <%- include('partials/item', { p }) %>
+                <% }) %>
+            <% } %>
+        </div>
+    </section>
+    <!-- ★ Contents e ★ -->
+
+<%- include('partials/footer') %>

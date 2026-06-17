@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.env
+.DS_Store
+
+# 미러링한 이미지 에셋(134MB) — sync로 재생성 가능하므로 git 제외. 원본 블루샵 sprite/css도 함께 제외.
+assets/

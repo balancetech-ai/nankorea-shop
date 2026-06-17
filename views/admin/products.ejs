@@ -1,0 +1,61 @@
+<% var active='products' %><%- include('partials/head') %>
+
+    <div class="adm-head">
+        <h1>상품관리 <small><%= total %>개</small></h1>
+        <a href="/admin/products/new" class="adm-btn primary"><i class="fa-solid fa-plus"></i> 새 상품 등록</a>
+    </div>
+
+    <form class="adm-filter" method="get" action="/admin/products">
+        <input type="text" name="q" value="<%= q %>" placeholder="상품명 검색">
+        <select name="cat">
+            <option value="">전체 카테고리</option>
+            <optgroup label="상품분류">
+                <% navCats.forEach((c) => { %><option value="<%= c.id %>" <%= cat === c.id ? 'selected' : '' %>><%= c.name %> (<%= c.count %>)</option><% }) %>
+            </optgroup>
+            <optgroup label="용도별">
+                <% purposeCats.forEach((c) => { %><option value="<%= c.id %>" <%= cat === c.id ? 'selected' : '' %>><%= c.name %> (<%= c.count %>)</option><% }) %>
+            </optgroup>
+        </select>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> 검색</button>
+        <% if (q || cat) { %><a href="/admin/products" class="clear">초기화</a><% } %>
+    </form>
+
+    <table class="adm-table">
+        <thead>
+            <tr><th>이미지</th><th>상품코드</th><th>상품명</th><th>가격(즉시수정)</th><th>관리</th></tr>
+        </thead>
+        <tbody>
+            <% if (items.length === 0) { %>
+                <tr><td colspan="5" class="empty">해당 상품이 없습니다.</td></tr>
+            <% } %>
+            <% items.forEach((p) => { %>
+                <tr>
+                    <td class="c-img"><% if (p.images && p.images.medium) { %><img src="<%= imgProd(p.images.medium) %>" alt=""><% } else { %><span class="noimg"><i class="fa-solid fa-image"></i></span><% } %></td>
+                    <td class="c-code"><%= p.productId %></td>
+                    <td class="c-name"><a href="/admin/products/<%= p.productId %>/edit"><%= p.name %></a></td>
+                    <td class="c-price">
+                        <form method="post" action="/admin/products/<%= p.productId %>/price" class="price-form">
+                            <input type="number" name="price" value="<%= p.price || 0 %>" min="0" step="100"> 원
+                            <button type="submit" title="가격저장"><i class="fa-solid fa-check"></i></button>
+                        </form>
+                    </td>
+                    <td class="c-act">
+                        <a href="/admin/products/<%= p.productId %>/edit" class="adm-btn sm"><i class="fa-solid fa-pen"></i> 수정</a>
+                        <form method="post" action="/admin/products/<%= p.productId %>/delete" onsubmit="return confirm('이 상품을 삭제할까요?');" style="display:inline;">
+                            <button type="submit" class="adm-btn sm danger"><i class="fa-solid fa-trash"></i> 삭제</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+    <% if (pages > 1) { %>
+        <nav class="adm-paging">
+            <% for (let i = 1; i <= pages; i++) { %>
+                <a href="/admin/products?page=<%= i %>&q=<%= encodeURIComponent(q) %>&cat=<%= cat %>" class="<%= i === page ? 'on' : '' %>"><%= i %></a>
+            <% } %>
+        </nav>
+    <% } %>
+
+<%- include('partials/foot') %>
