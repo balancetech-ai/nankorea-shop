@@ -99,10 +99,24 @@ function mountSkin(skin, base) {
     if (min != null) list = list.filter((p) => (p.price || 0) >= min);
     if (max != null) list = list.filter((p) => (p.price || 0) <= max);
     list = sortProducts(list, sort);
+
+    // 페이지네이션 (원본과 동일하게 20개/페이지)
+    const PER_PAGE = 20;
+    const total = list.length;
+    const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+    let page = parseInt(req.query.page, 10) || 1;
+    if (page < 1) page = 1;
+    if (page > totalPages) page = totalPages;
+    const pageList = list.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
     res.render(`${skin}/category`, {
       title: found.category.name,
       category: found.category,
-      products: list,
+      products: pageList,
+      best: list.slice(0, 4), // 베스트는 전체 기준 상위 4
+      total,
+      page,
+      totalPages,
       sort,
       min: req.query.min || '',
       max: req.query.max || '',

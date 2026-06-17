@@ -10,7 +10,7 @@
     </div>
 
     <div class="m-listhead">
-        <h1><%= category.name %> <em><%= products.length %></em></h1>
+        <h1><%= category.name %> <em><%= total %></em></h1>
     </div>
 
     <div class="m-sort">
@@ -26,6 +26,32 @@
         <div class="m-grid">
             <% products.forEach((p) => { %><%- include('partials/card', { p }) %><% }) %>
         </div>
+
+        <%
+          function pgUrl(n) {
+            const q = [];
+            if (sort) q.push('sort=' + sort);
+            if (min) q.push('min=' + min);
+            if (max) q.push('max=' + max);
+            q.push('page=' + n);
+            return base + '/category/' + category.id + '?' + q.join('&');
+          }
+        %>
+        <% if (totalPages > 1) { %>
+        <nav class="m-paging">
+            <% if (page > 1) { %><a href="<%= pgUrl(page - 1) %>">이전</a><% } %>
+            <% for (let n = 1; n <= totalPages; n++) { %>
+                <% if (n === page) { %><span class="on"><%= n %></span><% } else { %><a href="<%= pgUrl(n) %>"><%= n %></a><% } %>
+            <% } %>
+            <% if (page < totalPages) { %><a href="<%= pgUrl(page + 1) %>">다음</a><% } %>
+        </nav>
+        <% } %>
     <% } %>
+
+    <style>
+    .m-paging { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin:20px 12px; }
+    .m-paging a, .m-paging span { min-width:34px; height:34px; display:flex; align-items:center; justify-content:center; padding:0 8px; border:1px solid #e3e3e3; border-radius:6px; font-size:13px; color:#333; text-decoration:none; }
+    .m-paging span.on { background:#222; border-color:#222; color:#fff; font-weight:700; }
+    </style>
 
 <%- include('partials/footer') %>

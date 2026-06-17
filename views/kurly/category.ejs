@@ -6,7 +6,7 @@
                 <a href="<%= base %>/">Home</a> <i class="fa-solid fa-angle-right"></i>
                 <span><%= category.name %></span>
             </nav>
-            <h2><%= category.name %> <em><%= products.length %></em></h2>
+            <h2><%= category.name %> <em><%= total %></em></h2>
         </div>
     </div>
 
@@ -20,8 +20,35 @@
                         <%- include('partials/product-card', { p }) %>
                     <% }) %>
                 </div>
+
+                <%
+                  function pgUrl(n) {
+                    const q = [];
+                    if (sort) q.push('sort=' + sort);
+                    if (min) q.push('min=' + min);
+                    if (max) q.push('max=' + max);
+                    q.push('page=' + n);
+                    return base + '/category/' + category.id + '?' + q.join('&');
+                  }
+                %>
+                <% if (totalPages > 1) { %>
+                <nav class="k-paging">
+                    <% if (page > 1) { %><a href="<%= pgUrl(page - 1) %>" aria-label="이전"><i class="fa-solid fa-angle-left"></i></a><% } %>
+                    <% for (let n = 1; n <= totalPages; n++) { %>
+                        <% if (n === page) { %><span class="on"><%= n %></span><% } else { %><a href="<%= pgUrl(n) %>"><%= n %></a><% } %>
+                    <% } %>
+                    <% if (page < totalPages) { %><a href="<%= pgUrl(page + 1) %>" aria-label="다음"><i class="fa-solid fa-angle-right"></i></a><% } %>
+                </nav>
+                <% } %>
             <% } %>
         </div>
     </main>
+
+    <style>
+    .k-paging { display:flex; justify-content:center; gap:6px; margin:36px 0 12px; }
+    .k-paging a, .k-paging span { min-width:36px; height:36px; display:flex; align-items:center; justify-content:center; border:1px solid #e5e5e5; border-radius:8px; font-size:14px; color:#333; text-decoration:none; }
+    .k-paging a:hover { border-color:#5f0080; color:#5f0080; }
+    .k-paging span.on { background:#5f0080; border-color:#5f0080; color:#fff; font-weight:700; }
+    </style>
 
 <%- include('partials/footer') %>

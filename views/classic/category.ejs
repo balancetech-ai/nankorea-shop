@@ -7,12 +7,12 @@
         </div>
     </section>
 
-    <% if (products.length > 0) { %>
+    <% if (best.length > 0) { %>
     <!-- 베스트상품 -->
     <section class="subbestItem">
         <h1>베스트상품</h1>
         <div class="largepd4">
-            <% products.slice(0, 4).forEach((p, i) => { %>
+            <% best.forEach((p, i) => { %>
                 <h2 class="pd<%= i + 1 %>">베스트 <%= i + 1 %>위</h2>
                 <dl>
                     <dt class="pimg"><a href="<%= base %>/product/<%= p.productId %>"><img src="<%= imgProd(p.images && p.images.medium) %>" alt="<%= p.name %>" class="goodsimg" onerror="this.src='/shop/resources/img/noimage_240.gif';"></a></dt>
@@ -45,7 +45,7 @@
 
     <!-- 전체상품 -->
     <section class="subItemlist">
-        <h1>전체상품 리스트</h1>
+        <h1>전체상품 리스트 <span style="font-size:12px; color:#888; font-weight:normal;">(전체 <%= total %>건)</span></h1>
         <div class="largelist4">
             <% if (products.length === 0) { %>
                 <p style="padding:60px 0; text-align:center; color:#999; font-weight:normal; width:1000px;">해당 조건의 상품이 없습니다.</p>
@@ -55,7 +55,35 @@
                 <% }) %>
             <% } %>
         </div>
+
+        <%
+          function pgUrl(n) {
+            const q = [];
+            if (sort) q.push('sort=' + sort);
+            if (min) q.push('min=' + min);
+            if (max) q.push('max=' + max);
+            q.push('page=' + n);
+            return base + '/category/' + category.id + '?' + q.join('&');
+          }
+        %>
+        <% if (totalPages > 1) { %>
+        <div class="paging">
+            <% if (page > 1) { %><a href="<%= pgUrl(page - 1) %>" title="이전 페이지">&laquo;</a><% } %>
+            <% for (let n = 1; n <= totalPages; n++) { %>
+                <% if (n === page) { %><strong class="orange"><%= n %></strong><% } else { %><a href="<%= pgUrl(n) %>" title="<%= n %>페이지"><%= n %></a><% } %>
+            <% } %>
+            <% if (page < totalPages) { %><a href="<%= pgUrl(page + 1) %>" title="다음 페이지">&raquo;</a><% } %>
+        </div>
+        <div class="bo"></div>
+        <% } %>
     </section>
+
+    <style>
+    .subItemlist .paging { clear:both; text-align:center; padding:24px 0 8px; width:1000px; }
+    .subItemlist .paging a, .subItemlist .paging strong { display:inline-block; min-width:22px; padding:5px 8px; margin:0 2px; border:1px solid #ddd; font-size:12px; text-decoration:none; color:#555; line-height:1; }
+    .subItemlist .paging a:hover { border-color:#a4c639; color:#5a7d00; }
+    .subItemlist .paging strong.orange { background:#7aa32e; border-color:#7aa32e; color:#fff; font-weight:bold; }
+    </style>
     <!-- ★ Contents e ★ -->
 
 <%- include('partials/footer') %>
