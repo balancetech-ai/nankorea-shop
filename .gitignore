@@ -2,6 +2,7 @@ node_modules/
 *.log
 .env
 .DS_Store
+data/_backup*
 
 # 미러링한 상품/배너 이미지(131MB) — npm run sync로 재생성 가능하므로 git 제외.
 assets/images/
