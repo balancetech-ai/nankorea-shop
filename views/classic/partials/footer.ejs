@@ -42,12 +42,14 @@
         <div id="accountNum" class="accNum">
             <p>무통장 계좌번호 안내</p>
             <table border="0" cellspacing="0" cellpadding="0">
-                <% shop.accounts.forEach((a) => { %>
+                <% for (let i = 0; i < shop.accounts.length; i += 2) { %>
                     <tr>
-                        <th><span><%= a.no %></span></th>
-                        <td align="left"><strong style="color:#a9a9a9; font-size:12px;"><%= a.firm %></strong> <strong style="color:#5f5f5f; font-size:12px;"><%= a.depositor %></strong></td>
+                        <% for (let j = i; j < Math.min(i + 2, shop.accounts.length); j++) { const a = shop.accounts[j]; %>
+                            <th><span><%= a.no %></span></th>
+                            <td align="left" width="300px"><strong style="color:#a9a9a9; font-size:12px;"><%= a.firm %></strong> <strong style="color:#5f5f5f; font-size:12px;"><%= a.depositor %></strong></td>
+                        <% } %>
                     </tr>
-                <% }) %>
+                <% } %>
             </table>
         </div>
 
@@ -79,5 +81,32 @@
     </footer>
 
 </div>
+
+<!-- 퀵메뉴 스크롤 따라가기 (원본 script.js의 initializequick 로직 자체포함) -->
+<script>
+(function () {
+    var q = document.getElementById('quickMenu');
+    if (!q) return;
+    var LEFT = 1010, VIEWSTART = 85, VIEWSCROLL = 30, VIEWBOTTOM = 80, SPEED = 10;
+    q.style.position = 'absolute';
+    q.style.left = LEFT + 'px';
+    q.style.right = 'auto';
+    function scrollY() { return Math.max(document.documentElement.scrollTop, document.body.scrollTop, window.pageYOffset || 0); }
+    q.style.top = (scrollY() + VIEWSTART) + 'px';
+    function refresh() {
+        var bottomlimit = document.documentElement.scrollHeight - VIEWBOTTOM - q.offsetHeight;
+        var start = parseInt(q.style.top, 10) || 0;
+        var end = scrollY() + VIEWSCROLL;
+        if (end < VIEWSTART) end = VIEWSTART;
+        if (end > bottomlimit) end = bottomlimit;
+        if (start !== end) {
+            var amt = Math.ceil(Math.abs(end - start) / 15);
+            q.style.top = (start + (end < start ? -amt : amt)) + 'px';
+        }
+        setTimeout(refresh, SPEED);
+    }
+    refresh();
+})();
+</script>
 </body>
 </html>

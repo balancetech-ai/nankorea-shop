@@ -21,9 +21,9 @@ const SHOP_INFO = {
   email: 'nankorea33@naver.com',
   address: '서울 강남구 세곡동 74-5번지',
   eCommerceRegNo: '강남-03246호',
+  // 원본 무통장 계좌번호 안내 = 입금계좌(type 02) 2개만, 가로 2칸 정렬
   accounts: [
     { no: '068-02-060073', firm: 'NH농협(농협중앙회)', depositor: '한국난원' },
-    { no: '110-218-807474', firm: '신한은행', depositor: '한국난원' },
     { no: '096-25-0012-675', firm: '국민은행', depositor: '박창규' },
   ],
 };
